@@ -1,0 +1,1483 @@
+<!DOCTYPE html>
+
+<html lang="uz">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=1440, viewport-fit=cover" name="viewport"/>
+<meta content="#f3f0eb" name="theme-color"/>
+<title>NAQSHIN — naqsh bilan yangicha uslub</title>
+<meta content="NAQSHIN — Toshkentdagi kompyuterli tikuv ustaxonasi va milliy naqshli kiyimlar katalogi." name="description"/>
+<style>
+:root{--bg:#f3f0eb;--panel:#faf8f4;--paper:#fff;--text:#151412;--muted:#746e67;--line:#d9d2ca;--accent:#711b39;--accent2:#9d6f4a;--dark:#191715;--ok:#436448;--radius:18px;--shadow:0 18px 60px rgba(38,31,26,.12)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html{scroll-behavior:smooth;background:var(--bg)}body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--text)}button,input,select,textarea{font:inherit;color:inherit}button,a{cursor:pointer}a{color:inherit;text-decoration:none}.hidden{display:none!important}.muted{color:var(--muted)}
+.topbar{height:92px;position:sticky;top:0;z-index:70;background:rgba(250,248,244,.95);backdrop-filter:blur(18px);border-bottom:1px solid rgba(21,20,18,.08);display:grid;grid-template-columns:260px 1fr auto;align-items:center;padding:0 34px}.brand{border:0;background:none;display:flex;align-items:center;gap:12px;text-align:left;padding:0}.brand-mark{width:42px;height:42px;display:grid;place-items:center}.brand-mark svg{width:100%;fill:currentColor}.brand strong{font-size:22px;letter-spacing:.12em}.brand small{display:block;font-size:8px;letter-spacing:.18em;text-transform:uppercase;margin-top:2px}.main-nav{display:flex;justify-content:center;align-items:center;gap:22px}.nav-link{border:0;background:none;cursor:pointer;padding:33px 2px 27px;color:#5d5750;border-bottom:2px solid transparent;font-size:14px;white-space:nowrap}.nav-link.active{color:var(--text);border-color:var(--text)}.header-actions{display:flex;align-items:center;gap:8px}.search-box{width:270px;height:46px;border:1px solid var(--line);border-radius:999px;background:#fff;display:flex;gap:9px;align-items:center;padding:0 14px}.search-box svg,.icon-btn svg{width:20px;fill:none;stroke:currentColor;stroke-width:1.7}.search-box input{border:0;outline:0;background:transparent;width:100%;font-size:13px}.icon-btn{width:46px;height:46px;border:1px solid var(--line);background:#fff;border-radius:50%;display:grid;place-items:center;position:relative}.badge{position:absolute;right:-3px;top:-4px;width:21px;height:21px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:white;border:3px solid var(--panel);font-size:10px}.telegram-top{height:46px;border:0;border-radius:999px;background:var(--dark);color:white;padding:0 17px;font-size:13px}
+.view{display:none}.view.active{display:block}.page{max-width:1600px;margin:auto;padding:54px 42px 88px}.eyebrow{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8a8178;font-weight:700;margin:0 0 10px}.display{font-size:clamp(42px,5.1vw,78px);line-height:.96;letter-spacing:-.055em;font-weight:520;margin:0}.lead{font-size:17px;line-height:1.6;color:var(--muted);max-width:700px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin:0 0 26px}.section-head h2{font-size:38px;letter-spacing:-.035em;margin:0;font-weight:540}.text-link{border:0;background:none;padding:8px 0;border-bottom:1px solid #8e867d}.primary{height:54px;border:0;border-radius:12px;background:var(--dark);color:white;padding:0 22px;font-weight:650}.outline{height:54px;border:1px solid var(--line);border-radius:12px;background:transparent;padding:0 22px}.accent{background:var(--accent);color:#fff;border-color:var(--accent)}
+/* home */.home-hero{min-height:650px;margin:0;background:#d8d0c7;position:relative;overflow:hidden}.home-hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.82) contrast(.98)}.home-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(15,13,11,.62),rgba(15,13,11,.12) 58%,rgba(15,13,11,.04))}.hero-copy{position:relative;z-index:2;max-width:760px;padding:120px 7vw;color:#fff}.hero-copy .eyebrow{color:#e6ddd5}.hero-copy p{max-width:560px;color:#eee7e1;line-height:1.65}.hero-actions{display:flex;gap:10px;margin-top:30px}.hero-actions .primary{background:white;color:var(--text)}.hero-actions .outline{border-color:rgba(255,255,255,.45);color:#fff}.home-section{padding:74px 42px;max-width:1600px;margin:auto}.category-cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.cat-card{aspect-ratio:3/4;border-radius:var(--radius);overflow:hidden;position:relative;background:#d9d1c7;cursor:pointer}.cat-card img{width:100%;height:100%;object-fit:cover;transition:transform .35s}.cat-card:hover img{transform:scale(1.02)}.cat-card:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.62))}.cat-card-copy{position:absolute;z-index:2;left:22px;right:22px;bottom:20px;color:white}.cat-card-copy h3{font-size:27px;margin:0 0 5px;font-weight:520}.cat-card-copy p{font-size:12px;margin:0;color:#e8e1da}.soon{display:inline-block;margin-top:10px;padding:6px 9px;border-radius:99px;background:rgba(255,255,255,.17);font-size:10px;letter-spacing:.1em}.home-products,.pattern-grid,.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.pattern-grid{grid-template-columns:repeat(4,1fr)}.pattern-card{border:0;background:none;padding:0;text-align:left}.pattern-img{aspect-ratio:1/1;border-radius:16px;overflow:hidden}.pattern-img img{width:100%;height:100%;object-fit:cover}.pattern-card h3{margin:12px 0 3px;font-size:18px}.pattern-card p{margin:0;color:var(--muted);font-size:12px}.split-feature{display:grid;grid-template-columns:1.15fr .85fr;min-height:540px;background:var(--dark);color:#fff}.split-feature.light{background:#ded5ca;color:var(--text)}.split-feature img{width:100%;height:100%;object-fit:cover;min-height:540px}.feature-copy{padding:70px;display:flex;flex-direction:column;justify-content:center}.feature-copy h2{font-size:48px;line-height:1.04;letter-spacing:-.04em;margin:0 0 18px}.feature-copy p{line-height:1.65;color:#d2cac2}.light .feature-copy p{color:#625c56}.steps-three{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.mini-step{padding:26px;border:1px solid var(--line);border-radius:14px;background:#f8f5f0}.mini-step b{font-size:11px;color:var(--accent)}.mini-step h3{margin:36px 0 8px}.review{padding:28px;border-radius:14px;background:white;border:1px solid var(--line)}.review p{line-height:1.65}.review small{color:var(--muted)}.ig-grid{grid-template-columns:repeat(6,1fr)}.ig-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:12px}.store-card{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:18px;overflow:hidden}.store-card img{width:100%;height:100%;min-height:420px;object-fit:cover}.store-copy{padding:54px}.store-copy h2{font-size:40px;letter-spacing:-.035em;margin:0 0 16px}.placeholder-note{padding:10px 12px;background:#ece6df;border-radius:10px;color:#6b645c;font-size:12px}
+/* catalog */.catalog-layout{display:grid;grid-template-columns:300px 1fr;max-width:1920px;margin:auto}.sidebar{position:sticky;top:92px;align-self:start;height:calc(100vh - 92px);overflow:auto;padding:34px 25px 50px 34px;border-right:1px solid var(--line);background:#f7f3ee}.sidebar::-webkit-scrollbar{width:0}.sidebar-block{padding-bottom:22px;margin-bottom:22px;border-bottom:1px solid var(--line)}.sidebar h2{font-size:24px;margin:0 0 17px}.sidebar h3{font-size:14px;margin:0 0 13px}.category-list{display:flex;flex-direction:column;gap:5px}.category-btn{border:0;background:transparent;border-radius:11px;padding:11px 12px;display:flex;justify-content:space-between;text-align:left;color:#5e5852}.category-btn.active{background:#e9e2da;color:var(--text);font-weight:650}.category-btn span:last-child{font-size:11px;color:#8c847c}.dept-group{display:flex;flex-direction:column;gap:3px}.dept-group+.dept-group{margin-top:2px}.dept-label{display:flex;align-items:center;gap:8px;min-width:0}.dept-label small{font-size:10px!important;color:#918a82!important;font-weight:500}.dept-chevron{width:24px;height:24px;border-radius:50%;display:grid;place-items:center;font-size:17px!important;line-height:1;color:#716b65!important;transition:transform .2s ease,background .2s ease}.dept-group.open>.category-btn .dept-chevron{background:#ddd4ca;color:var(--text)!important}.dept-subtypes{display:grid;grid-template-rows:0fr;opacity:0;transition:grid-template-rows .22s ease,opacity .18s ease;margin-left:18px}.dept-subtypes.open{grid-template-rows:1fr;opacity:1}.dept-subtypes-inner{min-height:0;overflow:hidden;border-left:1px solid #d8d0c7;padding-left:11px}.dept-subtype{width:100%;min-height:37px;border:0;background:transparent;border-radius:9px;padding:7px 9px 7px 13px;display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:left;font-size:11.5px;color:#6b645e;position:relative}.dept-subtype:before{content:"";position:absolute;left:-12px;top:50%;width:8px;height:1px;background:#d8d0c7}.dept-subtype:hover{background:#eee8e1;color:var(--text)}.dept-subtype.active{background:#ded5ca;color:var(--text);font-weight:650}.dept-subtype small{font-size:9.5px;color:#9a928a}.dept-subtype.active small{color:#6f6861}.dept-group.open>.category-btn{color:var(--text)}.check-list{display:flex;flex-direction:column;gap:10px}.check-item{display:flex;align-items:center;gap:9px;font-size:12px;color:#554f49}.check-item input{appearance:none;width:19px;height:19px;border:1px solid #cfc8c0;border-radius:5px;background:#fff;display:grid;place-items:center}.check-item input:checked{background:var(--dark);border-color:var(--dark)}.check-item input:checked:after{content:"✓";color:#fff;font-size:12px}.chip-row{display:flex;gap:7px;flex-wrap:wrap}.chip{min-width:41px;height:37px;border:1px solid var(--line);background:#fff;border-radius:9px;padding:0 10px;font-size:12px}.chip.active{background:var(--dark);color:#fff;border-color:var(--dark)}.color-filter{display:flex;gap:10px;flex-wrap:wrap}.color-dot{width:27px;height:27px;border-radius:50%;border:3px solid transparent;outline:1px solid rgba(0,0,0,.14)}.color-dot.active{border-color:#fff;outline:2px solid var(--text)}.price-range{display:grid;grid-template-columns:1fr 1fr;gap:8px}.price-range input{width:100%;height:40px;border:1px solid var(--line);background:white;border-radius:9px;padding:0 9px;font-size:11px}.reset-btn{width:100%;height:44px;border:1px solid var(--line);border-radius:11px;background:transparent}.catalog-content{padding:43px 36px 80px;min-width:0}.catalog-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:20px}.catalog-head h1{font-size:46px;line-height:1;letter-spacing:-.045em;margin:0 0 14px;font-weight:530}.catalog-head .lead{font-size:14px;margin:0;max-width:610px}.catalog-meta{display:flex;gap:10px;align-items:center;white-space:nowrap}.catalog-meta select{height:44px;border:1px solid var(--line);background:white;border-radius:11px;padding:0 13px}.selected-filters{display:flex;flex-wrap:wrap;gap:7px;margin:0 0 18px}.filter-tag{border:1px solid var(--line);background:#fff;border-radius:99px;padding:7px 10px;font-size:11px}.collection-tabs{display:flex;gap:8px;margin-bottom:22px}.collection-tab{height:40px;border-radius:99px;border:1px solid var(--line);background:transparent;padding:0 15px}.collection-tab.active{background:var(--dark);color:#fff}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px 17px}.product-card{min-width:0}.product-media{aspect-ratio:3/4;border-radius:15px;overflow:hidden;position:relative;background:#dfd7ce}.product-media img{width:100%;height:100%;object-fit:cover;transition:transform .35s}.product-card:hover .product-media img{transform:scale(1.018)}.heart-btn{position:absolute;right:13px;top:13px;width:43px;height:43px;border:0;border-radius:50%;background:rgba(255,255,255,.92);font-size:19px}.heart-btn.active{color:var(--accent)}.quick-btn{position:absolute;left:12px;right:12px;bottom:12px;height:47px;border:0;border-radius:11px;background:rgba(25,23,21,.92);color:white;opacity:0;transform:translateY(6px);transition:.2s}.product-card:hover .quick-btn{opacity:1;transform:none}.status-pill{position:absolute;left:13px;top:13px;background:rgba(255,255,255,.9);padding:7px 9px;border-radius:99px;font-size:10px}.product-info{padding-top:11px}.product-title-row{display:flex;justify-content:space-between;gap:10px}.product-title-row h3{margin:0 0 2px;font-size:16px}.product-kind{font-size:11px;color:var(--muted)}.swatches{display:flex;gap:4px}.swatches i{width:15px;height:15px;border-radius:50%;border:1px solid rgba(0,0,0,.14)}.product-price{margin:7px 0 0;font-size:14px;font-weight:600}.empty-state{padding:80px;text-align:center;border:1px dashed var(--line);border-radius:16px}.skeleton{aspect-ratio:3/4;border-radius:15px;background:linear-gradient(90deg,#e5dfd7 25%,#f3eee8 37%,#e5dfd7 63%);background-size:400% 100%;animation:sk 1.2s infinite}.skeleton-card div:last-child{height:45px;margin-top:10px;border-radius:8px;background:#e4ddd4}@keyframes sk{0%{background-position:100% 0}100%{background-position:0 0}}
+/* content pages */.content-hero{padding:70px 0 48px;max-width:900px}.content-hero h1{font-size:64px;line-height:1;letter-spacing:-.05em;font-weight:520;margin:0 0 20px}.subnav{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 32px}.subnav button{height:42px;border:1px solid var(--line);background:#fff;border-radius:99px;padding:0 14px}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.info-card{border:1px solid var(--line);border-radius:14px;padding:26px;background:#f9f6f1}.info-card h3{font-size:20px;margin:28px 0 8px}.info-card p{color:var(--muted);line-height:1.55}.process-list{display:flex;flex-direction:column;border-top:1px solid var(--line)}.process-row{display:grid;grid-template-columns:90px 1fr 330px;gap:30px;align-items:center;padding:26px 0;border-bottom:1px solid var(--line)}.process-row b{font-size:13px;color:var(--accent)}.process-row h3{font-size:25px;margin:0 0 6px}.process-row p{margin:0;color:var(--muted);line-height:1.55}.process-row img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:12px}.table-wrap{overflow:auto;border:1px solid var(--line);border-radius:14px;background:white}.data-table{width:100%;border-collapse:collapse;min-width:650px}.data-table th,.data-table td{text-align:left;padding:15px;border-bottom:1px solid #e8e2db;font-size:13px}.data-table th{background:#f1ece6}.service-layout{display:grid;grid-template-columns:1fr 1fr;gap:36px;margin:40px 0}.service-layout h2{font-size:35px;letter-spacing:-.03em}.bullet-list{padding-left:18px;line-height:1.9;color:#5f5851}.placement-demo{height:380px;border:1px solid var(--line);border-radius:18px;background:#eee8e0;position:relative;display:grid;place-items:center}.shirt{width:170px;height:225px;border:2px solid #a9a096;border-radius:55px 55px 22px 22px;position:relative}.shirt:before,.shirt:after{content:"";position:absolute;top:35px;width:80px;height:90px;border:2px solid #a9a096;border-radius:35px}.shirt:before{left:-62px;transform:rotate(22deg)}.shirt:after{right:-62px;transform:rotate(-22deg)}.pin{position:absolute;width:25px;height:25px;border-radius:50%;background:var(--accent);color:white;display:grid;place-items:center;font-size:10px}.p1{left:80px;top:55px}.p2{right:-55px;top:65px}.p3{left:72px;bottom:30px}.p4{left:72px;top:120px}.before-after{display:grid;grid-template-columns:1fr 1fr;gap:6px}.before-after img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px}.form-card{border:1px solid var(--line);border-radius:16px;background:white;padding:28px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}.field label{font-size:12px;color:#655f58}.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:10px;background:#fff;padding:0 12px;outline:none}.field input,.field select{height:48px}.field textarea{min-height:100px;padding-top:12px;resize:vertical}.field input:focus,.field textarea:focus,.field select:focus{border-color:#8c8076}.success{padding:18px;border-radius:12px;background:#e6efe7;color:#35533b}.faq-list{border-top:1px solid var(--line)}.faq-item{border-bottom:1px solid var(--line)}.faq-q{width:100%;border:0;background:none;text-align:left;padding:20px 0;display:flex;justify-content:space-between;font-weight:620}.faq-a{padding:0 0 20px;color:var(--muted);line-height:1.6}.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.team-card{border:1px solid var(--line);border-radius:14px;padding:25px}.team-card .avatar{height:210px;border-radius:12px;background:#ddd5cc;margin-bottom:17px;overflow:hidden}.team-card img{width:100%;height:100%;object-fit:cover}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:35px 0}.stat{padding:28px;border:1px solid var(--line);border-radius:14px}.stat strong{display:block;font-size:34px;margin-bottom:4px}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:30px}.contact-card{padding:30px;border:1px solid var(--line);border-radius:16px;background:white}.map-placeholder{min-height:430px;background:#dfd7ce;border-radius:16px;display:grid;place-items:center;text-align:center;padding:30px;color:#665f58}
+/* product modal */.modal-backdrop{position:fixed;inset:0;z-index:100;background:rgba(15,13,11,.54);backdrop-filter:blur(5px);display:grid;place-items:center;padding:20px}.product-modal-card{width:min(1160px,96vw);height:min(820px,94vh);background:var(--panel);border-radius:20px;overflow:hidden;display:grid;grid-template-columns:1.05fr .95fr;position:relative;box-shadow:var(--shadow)}.close-btn{position:absolute;right:18px;top:18px;width:48px;height:48px;border-radius:50%;border:1px solid var(--line);background:#fff;font-size:25px;z-index:4}.gallery{padding:14px;display:grid;grid-template-columns:84px 1fr;gap:10px;height:100%;min-height:0}.thumbs{display:flex;flex-direction:column;gap:8px;overflow:auto}.thumb{border:2px solid transparent;border-radius:10px;overflow:hidden;background:none;padding:0;aspect-ratio:3/4}.thumb.active{border-color:var(--dark)}.thumb img{width:100%;height:100%;object-fit:cover}.modal-main-image{overflow:hidden;border-radius:14px;background:#ddd;position:relative}.modal-main-image img{width:100%;height:100%;object-fit:cover;transition:transform .25s;cursor:zoom-in}.modal-main-image.zoom img{transform:scale(1.7);cursor:zoom-out}.zoom-note{position:absolute;bottom:12px;right:12px;background:rgba(255,255,255,.9);padding:7px 9px;border-radius:99px;font-size:10px}.modal-copy{padding:60px 42px 36px;overflow:auto}.modal-title-row{display:flex;justify-content:space-between;gap:15px}.modal-title-row h2{font-size:43px;line-height:1;letter-spacing:-.04em;margin:0}.heart-large{border:0;background:none;font-size:30px}.modal-price{font-size:22px;font-weight:700;margin:17px 0}.modal-description{line-height:1.6;color:var(--muted)}.product-badge{display:inline-block;padding:7px 10px;background:#e8efe7;color:#38553e;border-radius:99px;font-size:11px}.selector-block{margin:22px 0}.selector-block>span{display:block;font-size:12px;font-weight:650;margin-bottom:9px}.modal-colors,.modal-sizes{display:flex;gap:8px;flex-wrap:wrap}.modal-color{width:37px;height:37px;border-radius:50%;border:3px solid var(--panel);outline:1px solid #bbb}.modal-color.active{outline:2px solid var(--text)}.modal-size{min-width:47px;height:43px;border:1px solid var(--line);border-radius:9px;background:#fff}.modal-size.active{background:var(--dark);color:white}.detail-lines{margin:20px 0;border-top:1px solid var(--line)}.detail-line{display:flex;justify-content:space-between;gap:20px;padding:12px 0;border-bottom:1px solid var(--line);font-size:12px}.detail-line span{color:var(--muted)}.modal-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:20px}.pattern-link{border:0;background:none;padding:0;color:var(--accent);text-decoration:underline}.similar{margin-top:28px}.similar h3{font-size:15px}.similar-row{display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.similar-item img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:8px}.similar-item span{display:block;font-size:10px;margin-top:4px}.favorites-drawer{position:fixed;z-index:110;right:0;top:0;width:min(440px,96vw);height:100vh;background:var(--panel);transform:translateX(105%);transition:.3s;display:flex;flex-direction:column;box-shadow:-25px 0 70px rgba(0,0,0,.12)}.favorites-drawer.open{transform:none}.drawer-head{padding:28px;display:flex;justify-content:space-between;border-bottom:1px solid var(--line)}.drawer-head h2{margin:0}.drawer-head button{border:0;background:none;font-size:25px}.drawer-list{padding:16px 24px;overflow:auto;flex:1}.favorite-item{display:grid;grid-template-columns:75px 1fr 28px;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}.favorite-item img{width:75px;height:95px;object-fit:cover;border-radius:8px}.favorite-item h4{margin:8px 0 3px}.favorite-item p{font-size:11px;color:var(--muted);margin:3px 0}.favorite-item button{border:0;background:none}.drawer-footer{padding:22px;border-top:1px solid var(--line)}.drawer-footer .primary{width:100%}.drawer-scrim{position:fixed;inset:0;z-index:109;background:rgba(0,0,0,.2)}
+/* generic modal/forms */.sheet-backdrop{position:fixed;inset:0;z-index:120;background:rgba(15,13,11,.58);display:grid;place-items:center;padding:18px}.sheet{width:min(650px,96vw);max-height:94vh;overflow:auto;background:var(--panel);border-radius:18px;padding:34px;position:relative}.sheet h2{font-size:33px;letter-spacing:-.03em;margin:0 0 10px}.sheet .close-btn{top:12px;right:12px}.order-summary{padding:14px;border-radius:12px;background:#eee8e0;margin:18px 0}.size-table{width:100%;border-collapse:collapse}.size-table td,.size-table th{border-bottom:1px solid var(--line);padding:10px;text-align:left;font-size:12px}.size-table th{background:#eee8e0}.floating-tg{position:fixed;right:20px;bottom:20px;z-index:65;width:58px;height:58px;border-radius:50%;border:0;background:#229ED9;color:white;box-shadow:0 10px 30px rgba(0,0,0,.2);font-weight:800}.idle-screen{position:fixed;inset:0;z-index:200;background:#171513;color:white;display:grid;place-items:center;text-align:center}.idle-inner h1{font-size:70px;letter-spacing:.12em;margin:10px}.idle-inner p{color:#d4cdc5}.pulse{width:60px;height:60px;border:1px solid white;border-radius:50%;margin:35px auto;animation:pulse 1.8s infinite}@keyframes pulse{50%{transform:scale(1.35);opacity:.25}}
+.footer{background:#1a1816;color:#f4eee8;padding:56px 42px 24px}.footer-grid{max-width:1600px;margin:auto;display:grid;grid-template-columns:1.3fr repeat(4,1fr);gap:35px}.footer h4{font-size:13px;margin:0 0 14px}.footer a,.footer p{display:block;color:#bfb7ae;font-size:12px;line-height:1.9}.footer-brand strong{font-size:23px;letter-spacing:.12em}.footer-bottom{max-width:1600px;margin:35px auto 0;padding-top:20px;border-top:1px solid #38332f;display:flex;justify-content:space-between;color:#968f87;font-size:11px}
+@media(max-width:1260px){.main-nav{gap:12px}.nav-link{font-size:12px}.search-box{width:210px}.telegram-top{display:none}.category-cards{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,1fr)}.home-products{grid-template-columns:repeat(2,1fr)}.ig-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:900px){.topbar{height:74px;padding:0 15px;grid-template-columns:1fr auto}.brand strong{font-size:18px}.brand small,.main-nav,.fs-btn{display:none}.search-box{position:fixed;top:74px;left:0;right:0;width:100%;height:50px;border-radius:0;border-left:0;border-right:0;z-index:69}.header-actions{grid-column:2}.page{padding:72px 18px 60px}.home-section{padding:56px 18px}.home-hero{margin-top:50px;min-height:580px}.hero-copy{padding:110px 24px}.category-cards{grid-template-columns:1fr 1fr;gap:8px}.cat-card-copy{left:14px;bottom:14px}.cat-card-copy h3{font-size:20px}.home-products,.pattern-grid,.review-grid{grid-template-columns:1fr 1fr;gap:12px}.split-feature,.store-card{grid-template-columns:1fr}.feature-copy{padding:40px 22px}.feature-copy h2{font-size:37px}.split-feature img{min-height:380px}.steps-three{grid-template-columns:1fr}.ig-grid{grid-template-columns:repeat(3,1fr);gap:6px}.catalog-layout{display:block}.sidebar{position:static;height:auto;padding:72px 16px 16px;border-right:0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr;gap:12px}.sidebar-block{margin:0;padding:14px;border:1px solid var(--line);border-radius:12px}.dept-subtypes{margin-left:12px}.dept-subtype{min-height:42px;font-size:12px}.dept-label small{display:none}.sidebar>h2{display:none}.reset-btn{grid-column:1/-1}.catalog-content{padding:25px 15px 65px}.catalog-head{display:block}.catalog-meta{margin-top:18px;justify-content:space-between}.product-grid{grid-template-columns:1fr 1fr;gap:23px 9px}.quick-btn{opacity:1;transform:none;height:40px;font-size:11px}.content-hero{padding-top:60px}.content-hero h1{font-size:44px}.info-grid,.team-grid,.stats{grid-template-columns:1fr 1fr}.process-row{grid-template-columns:55px 1fr}.process-row img{grid-column:2}.service-layout,.contact-grid{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.product-modal-card{height:95vh;grid-template-columns:1fr;overflow:auto}.gallery{height:55vh;min-height:420px}.modal-copy{padding:35px 22px}.modal-title-row h2{font-size:36px}.footer-grid{grid-template-columns:1fr 1fr}.footer-brand{grid-column:1/-1}.floating-tg{bottom:14px;right:14px}}
+@media(max-width:520px){.brand-mark{width:34px;height:34px}.icon-btn{width:42px;height:42px}.category-cards{grid-template-columns:1fr 1fr}.home-products,.pattern-grid,.review-grid{grid-template-columns:1fr 1fr}.product-grid{grid-template-columns:1fr 1fr}.product-title-row h3{font-size:14px}.catalog-head h1{font-size:35px}.sidebar{grid-template-columns:1fr}.info-grid,.team-grid,.stats{grid-template-columns:1fr}.gallery{grid-template-columns:62px 1fr}.modal-actions{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.footer-brand{grid-column:auto}.footer-bottom{display:block}.ig-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* Official NAQSHIN logo update */
+.brand-logo{display:block;width:184px;height:auto;max-height:54px;object-fit:contain;object-position:left center}
+.footer-logo{display:block;width:205px;height:auto;max-height:62px;object-fit:contain;object-position:left center;margin-bottom:18px}
+@media(max-width:900px){.brand-logo{width:150px;max-height:44px}}
+@media(max-width:520px){.brand-logo{width:132px;max-height:38px}.footer-logo{width:175px}}
+
+/* custom design upload */
+.custom-design-band{max-width:1600px;margin:0 auto;padding:0 42px 74px}.custom-design-card{display:grid;grid-template-columns:.92fr 1.08fr;min-height:430px;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#f9f6f1}.custom-design-visual{position:relative;min-height:430px;background:linear-gradient(145deg,#ded6cc,#cfc4b8);display:flex;align-items:center;justify-content:center;padding:42px}.custom-design-visual:before{content:"";position:absolute;inset:24px;border:1px dashed rgba(21,20,18,.22);border-radius:16px}.upload-glyph{position:relative;z-index:2;width:180px;height:180px;border-radius:50%;background:rgba(255,255,255,.74);display:grid;place-items:center;text-align:center;box-shadow:0 18px 60px rgba(38,31,26,.08)}.upload-glyph svg{width:54px;height:54px;fill:none;stroke:var(--text);stroke-width:1.35;margin:auto}.upload-glyph b{display:block;margin-top:8px;font-size:13px}.custom-design-copy{padding:58px 62px;display:flex;flex-direction:column;justify-content:center}.custom-design-copy h2{font-size:46px;line-height:1.04;letter-spacing:-.04em;margin:0 0 16px;font-weight:540}.custom-design-copy p{max-width:650px;line-height:1.65;color:var(--muted)}.custom-design-points{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:22px 0 26px}.custom-design-point{padding:14px 15px;border:1px solid var(--line);border-radius:12px;background:#fff;font-size:12px}.custom-design-point b{display:block;font-size:11px;color:var(--accent);margin-bottom:5px}.service-choice{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:0 0 34px}.service-choice-card{padding:24px;border:1px solid var(--line);border-radius:16px;background:#fff}.service-choice-card.accent-card{background:var(--dark);color:#fff;border-color:var(--dark)}.service-choice-card h3{margin:0 0 8px;font-size:21px}.service-choice-card p{margin:0 0 18px;line-height:1.55;color:var(--muted);font-size:13px}.service-choice-card.accent-card p{color:#cec7c0}.design-upload-zone{border:1px dashed #bdb4aa;border-radius:15px;padding:22px;background:#f8f5f0;display:grid;grid-template-columns:110px 1fr;gap:18px;align-items:center}.design-preview{width:110px;height:110px;border-radius:12px;background:#ebe5dd;overflow:hidden;display:grid;place-items:center;color:#8a8279;font-size:11px;text-align:center;padding:8px}.design-preview img{width:100%;height:100%;object-fit:contain;background:#fff}.design-file-copy b{display:block;margin-bottom:5px}.design-file-copy p{font-size:12px;color:var(--muted);margin:0 0 12px}.file-button{display:inline-flex;height:42px;align-items:center;padding:0 15px;border:1px solid var(--line);border-radius:10px;background:#fff;font-size:12px;font-weight:650}.upload-meta{font-size:11px;color:var(--muted);margin-top:8px;word-break:break-word}.inline-fields{display:grid;grid-template-columns:1fr 1fr;gap:14px}.design-note{padding:13px 15px;border-radius:11px;background:#ece6df;color:#625c55;font-size:12px;line-height:1.5}.sheet.design-sheet{width:min(760px,94vw);max-height:92vh;overflow:auto}.design-sheet h2{font-size:34px;margin:0 0 10px}.design-sheet .lead{font-size:14px}.design-sheet .form-grid{margin-top:22px}
+@media(max-width:900px){.custom-design-card{grid-template-columns:1fr}.custom-design-visual{min-height:280px}.custom-design-copy{padding:40px}.custom-design-points{grid-template-columns:1fr}.service-choice{grid-template-columns:1fr}.inline-fields{grid-template-columns:1fr}}
+@media(max-width:620px){.custom-design-band{padding:0 16px 48px}.custom-design-copy{padding:30px 22px}.custom-design-copy h2{font-size:34px}.custom-design-visual{min-height:230px;padding:25px}.upload-glyph{width:145px;height:145px}.design-upload-zone{grid-template-columns:1fr}.design-preview{width:100%;height:150px}.sheet.design-sheet{width:100vw;max-height:100vh;border-radius:0}}
+
+</style>
+<style>
+/* v8 editorial spacing refinement */
+#homeView > .split-feature + .split-feature{
+  margin-top: 32px;
+}
+#homeView > .split-feature + .home-section{
+  padding-top: 96px;
+}
+#homeView > .home-section:last-child{
+  padding-bottom: 96px;
+}
+@media (max-width: 760px){
+  #homeView > .split-feature + .split-feature{
+    margin-top: 18px;
+  }
+  #homeView > .split-feature + .home-section{
+    padding-top: 64px;
+  }
+  #homeView > .home-section:last-child{
+    padding-bottom: 64px;
+  }
+}
+</style><style>
+/* v10 — ornament-only browser + full-screen AI garment modal */
+.ornament-browser-section{
+  padding-top:84px;
+  padding-bottom:96px;
+}
+.ornament-browser-head{
+  align-items:flex-end;
+}
+.ornament-browser-intro{
+  max-width:720px;
+  margin:11px 0 0;
+  color:var(--muted);
+  font-size:15px;
+  line-height:1.6;
+}
+.ornament-source-link{
+  white-space:nowrap;
+}
+.ornament-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:18px;
+}
+.ornament-card{
+  border:0;
+  background:transparent;
+  padding:0;
+  text-align:left;
+  cursor:pointer;
+}
+.ornament-card-visual{
+  aspect-ratio:1/1;
+  border-radius:16px;
+  overflow:hidden;
+  background:#eee6d9;
+  position:relative;
+  border:1px solid transparent;
+  transition:.22s ease;
+}
+.ornament-card:hover .ornament-card-visual{
+  transform:translateY(-2px);
+  border-color:#171714;
+}
+.ornament-card-visual img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+}
+.ornament-card-hover{
+  position:absolute;
+  inset:auto 12px 12px 12px;
+  min-height:42px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:rgba(23,23,20,.92);
+  color:#fff;
+  font-size:12px;
+  font-weight:650;
+  opacity:0;
+  transform:translateY(7px);
+  transition:.2s ease;
+}
+.ornament-card:hover .ornament-card-hover{
+  opacity:1;
+  transform:none;
+}
+.ornament-card-copy{
+  padding:11px 2px 0;
+}
+.ornament-card-copy h3{
+  margin:0 0 4px;
+  font-size:17px;
+}
+.ornament-card-copy p{
+  margin:0;
+  color:var(--muted);
+  font-size:12px;
+}
+
+/* modal */
+.ornament-flow-modal{
+  position:fixed;
+  inset:0;
+  z-index:120;
+  background:rgba(18,17,15,.58);
+  backdrop-filter:blur(7px);
+  display:none;
+  padding:24px;
+}
+.ornament-flow-modal.open{
+  display:block;
+}
+.ornament-flow-shell{
+  width:min(1480px,100%);
+  height:calc(100vh - 48px);
+  margin:0 auto;
+  background:#f8f5ef;
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:0 35px 100px rgba(0,0,0,.22);
+  display:flex;
+  flex-direction:column;
+}
+.ornament-flow-header{
+  height:78px;
+  flex:0 0 78px;
+  border-bottom:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 26px;
+  background:#fbf8f3;
+}
+.ornament-flow-brand{
+  display:flex;
+  flex-direction:column;
+  gap:3px;
+}
+.ornament-flow-brand strong{
+  font-size:16px;
+}
+.ornament-modal-close{
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  border:1px solid var(--line);
+  background:#fff;
+  font-size:28px;
+  line-height:1;
+}
+.ornament-flow-body{
+  min-height:0;
+  flex:1;
+  display:grid;
+  grid-template-columns:minmax(330px,.78fr) minmax(0,1.55fr);
+}
+.ornament-selected-panel{
+  border-right:1px solid var(--line);
+  padding:28px;
+  display:flex;
+  flex-direction:column;
+  min-height:0;
+}
+.ornament-selected-art{
+  flex:1;
+  min-height:280px;
+  border-radius:18px;
+  overflow:hidden;
+  background:#eee4d3;
+  display:grid;
+  place-items:center;
+}
+.ornament-selected-art img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.ornament-selected-copy{
+  padding-top:22px;
+}
+.flow-step-label{
+  color:var(--accent);
+  letter-spacing:.12em;
+  font-size:10px;
+  font-weight:750;
+}
+.ornament-selected-copy h2{
+  margin:5px 0 6px;
+  font-size:30px;
+  letter-spacing:-.03em;
+}
+.ornament-selected-copy p{
+  margin:0 0 10px;
+  color:var(--muted);
+  font-size:13px;
+}
+.source-mini-link{
+  color:var(--text);
+  font-size:12px;
+  text-underline-offset:5px;
+}
+.ornament-generator-panel{
+  min-width:0;
+  overflow:auto;
+  padding:34px 34px 42px;
+}
+.generator-title h2,
+.generator-title-row h2{
+  margin:5px 0 0;
+  font-size:34px;
+  letter-spacing:-.035em;
+}
+.generator-title{
+  margin-bottom:22px;
+}
+.generator-dept-tabs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-bottom:18px;
+}
+.generator-dept-tabs button{
+  min-height:43px;
+  padding:0 16px;
+  border-radius:999px;
+  border:1px solid var(--line);
+  background:#fff;
+}
+.generator-dept-tabs button.active{
+  color:#fff;
+  background:#171714;
+  border-color:#171714;
+}
+.generator-garment-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+}
+.generator-garment-btn{
+  min-height:72px;
+  border-radius:13px;
+  border:1px solid var(--line);
+  background:#fff;
+  padding:14px 15px;
+  text-align:left;
+  transition:.18s ease;
+}
+.generator-garment-btn:hover{
+  background:#f0ebe4;
+}
+.generator-garment-btn.selected{
+  border-color:var(--accent);
+  box-shadow:inset 0 0 0 1px var(--accent);
+  background:#f2e8e5;
+}
+.generator-action-row{
+  margin-top:24px;
+  padding-top:20px;
+  border-top:1px solid var(--line);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.generator-selection-summary{
+  color:var(--muted);
+  font-size:13px;
+}
+.generator-create-btn{
+  min-width:190px;
+  min-height:54px;
+}
+.generator-create-btn:disabled{
+  opacity:.42;
+  cursor:not-allowed;
+}
+.generator-title-row{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:20px;
+  margin-bottom:22px;
+}
+.generator-title-row p{
+  color:var(--muted);
+  margin:6px 0 0;
+}
+.generator-text-btn{
+  border:0;
+  background:transparent;
+  text-decoration:underline;
+  text-underline-offset:5px;
+  padding:8px 0;
+}
+.generator-results-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.generator-result-card{
+  aspect-ratio:4/5;
+  border-radius:15px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:#ece6de;
+  position:relative;
+}
+.generator-result-card img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+.generator-result-badge{
+  position:absolute;
+  top:10px;
+  left:10px;
+  border-radius:999px;
+  background:rgba(255,255,255,.92);
+  padding:6px 9px;
+  font-size:10px;
+  letter-spacing:.1em;
+}
+.generator-result-card.loading{
+  background:linear-gradient(90deg,#ece6de 25%,#f7f3ed 50%,#ece6de 75%);
+  background-size:200% 100%;
+  animation:ornamentLoading 1.1s linear infinite;
+}
+@keyframes ornamentLoading{to{background-position:-200% 0}}
+.generator-results-footer{
+  margin-top:16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+}
+.generator-results-footer p{
+  max-width:620px;
+  color:var(--muted);
+  font-size:12px;
+  margin:0;
+}
+.generator-results-footer .secondary-btn{
+  min-height:48px;
+  white-space:nowrap;
+}
+.generator-error{
+  grid-column:1/-1;
+  padding:24px;
+  border-radius:14px;
+  border:1px solid #d9b7b7;
+  background:#fff6f6;
+  color:#7e3030;
+}
+body.ornament-modal-lock{
+  overflow:hidden;
+}
+@media(max-width:1000px){
+  .ornament-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ornament-flow-body{grid-template-columns:1fr}
+  .ornament-selected-panel{
+    display:grid;
+    grid-template-columns:180px 1fr;
+    gap:18px;
+    border-right:0;
+    border-bottom:1px solid var(--line);
+  }
+  .ornament-selected-art{
+    min-height:180px;
+  }
+  .ornament-selected-copy{padding-top:0}
+}
+@media(max-width:760px){
+  .ornament-browser-section{padding-top:56px;padding-bottom:68px}
+  .ornament-grid{gap:10px}
+  .ornament-flow-modal{padding:0}
+  .ornament-flow-shell{
+    height:100vh;
+    border-radius:0;
+  }
+  .ornament-flow-header{
+    padding:0 16px;
+  }
+  .ornament-flow-body{display:block;overflow:auto}
+  .ornament-selected-panel{
+    padding:16px;
+    grid-template-columns:110px 1fr;
+  }
+  .ornament-selected-art{min-height:110px}
+  .ornament-selected-copy h2{font-size:23px}
+  .ornament-generator-panel{padding:24px 16px 32px}
+  .generator-title h2,.generator-title-row h2{font-size:28px}
+  .generator-garment-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .generator-action-row,.generator-results-footer,.generator-title-row{
+    align-items:stretch;
+    flex-direction:column;
+  }
+  .generator-create-btn,.generator-results-footer .secondary-btn{width:100%}
+  .generator-results-grid{gap:8px}
+}
+</style>
+<style>
+/* v11 — internal ornament library expansion */
+#showAllOrnamentsBtn{
+  border:0;
+  background:transparent;
+  font:inherit;
+  color:inherit;
+  cursor:pointer;
+}
+.source-mini-label{
+  text-decoration:none;
+  cursor:default;
+  color:var(--muted);
+}
+</style>
+<style>
+/* v12 full ornament catalogue */
+.ornament-catalog-count{
+  margin-top:18px;
+  color:var(--muted);
+  font-size:12px;
+}
+</style>
+<style>
+/* v14 — service section hierarchy / spacing refinement */
+#serviceView .info-grid{
+  margin-bottom:34px;
+  gap:16px;
+}
+#serviceView .info-card{
+  min-height:168px;
+  padding:26px 28px;
+  display:flex;
+  flex-direction:column;
+}
+#serviceView .info-card h3{
+  margin-top:24px;
+  margin-bottom:10px;
+}
+#serviceView .info-card p{
+  margin-top:0;
+  color:var(--muted);
+  line-height:1.5;
+}
+
+#serviceView .service-choice{
+  margin-top:0;
+  margin-bottom:48px;
+  gap:20px;
+}
+#serviceView .service-choice-card{
+  min-height:220px;
+  padding:28px 30px;
+  display:flex;
+  flex-direction:column;
+  align-items:flex-start;
+}
+#serviceView .service-choice-card h3{
+  margin:10px 0 8px;
+}
+#serviceView .service-choice-card > p:not(.eyebrow){
+  margin:0 0 24px;
+  color:var(--muted);
+  line-height:1.55;
+}
+#serviceView .service-choice-card.accent-card > p:not(.eyebrow){
+  color:#d6cec6;
+}
+#serviceView .service-choice-card button{
+  margin-top:auto;
+}
+
+/* create a clear visual pause before the next content group */
+#serviceView .service-layout{
+  margin-top:8px;
+}
+
+@media (max-width:760px){
+  #serviceView .info-grid{
+    margin-bottom:24px;
+  }
+  #serviceView .service-choice{
+    gap:14px;
+    margin-bottom:36px;
+  }
+  #serviceView .service-choice-card{
+    min-height:0;
+    padding:24px;
+  }
+}
+</style>
+<style>
+/* v15 — compact homepage feature blocks */
+#homeView .split-feature{
+  min-height:520px !important;
+  height:auto !important;
+}
+#homeView .split-feature .split-image,
+#homeView .split-feature .split-copy{
+  min-height:520px !important;
+}
+#homeView .split-feature .split-copy{
+  padding:56px 64px !important;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+#homeView .split-feature .split-copy h2{
+  margin-top:10px;
+  margin-bottom:18px;
+  line-height:1.02;
+}
+#homeView .split-feature .split-copy > p:not(.eyebrow){
+  margin-bottom:24px;
+  max-width:680px;
+}
+#homeView .split-feature .split-copy .primary-btn,
+#homeView .split-feature .split-copy .secondary-btn{
+  align-self:flex-start;
+}
+
+#homeView .store-section{
+  min-height:500px !important;
+  height:auto !important;
+}
+#homeView .store-section .store-image,
+#homeView .store-section .store-copy{
+  min-height:500px !important;
+}
+#homeView .store-section .store-copy{
+  padding:52px 56px !important;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+#homeView .split-feature.store-block{
+  min-height:500px !important;
+}
+#homeView .split-feature.store-block .split-image,
+#homeView .split-feature.store-block .split-copy{
+  min-height:500px !important;
+}
+
+#homeView > .split-feature + .split-feature{
+  margin-top:24px !important;
+}
+#homeView > .split-feature + .home-section{
+  padding-top:72px !important;
+}
+
+@media (min-width:1600px){
+  #homeView .split-feature,
+  #homeView .split-feature .split-image,
+  #homeView .split-feature .split-copy{
+    min-height:540px !important;
+  }
+  #homeView .store-section,
+  #homeView .store-section .store-image,
+  #homeView .store-section .store-copy{
+    min-height:520px !important;
+  }
+}
+
+@media (max-width:1100px){
+  #homeView .split-feature,
+  #homeView .split-feature .split-image,
+  #homeView .split-feature .split-copy,
+  #homeView .store-section,
+  #homeView .store-section .store-image,
+  #homeView .store-section .store-copy{
+    min-height:420px !important;
+  }
+  #homeView .split-feature .split-copy,
+  #homeView .store-section .store-copy{
+    padding:40px !important;
+  }
+}
+
+@media (max-width:760px){
+  #homeView .split-feature,
+  #homeView .store-section{
+    min-height:0 !important;
+  }
+  #homeView .split-feature .split-image,
+  #homeView .store-section .store-image{
+    min-height:300px !important;
+  }
+  #homeView .split-feature .split-copy,
+  #homeView .store-section .store-copy{
+    min-height:0 !important;
+    padding:32px 22px !important;
+  }
+}
+</style>
+<style>
+/* v16 — even more compact feature blocks */
+#homeView .split-feature,
+#homeView .split-feature .split-image,
+#homeView .split-feature .split-copy{
+  min-height:420px !important;
+}
+#homeView .split-feature .split-copy{
+  padding:42px 52px !important;
+}
+#homeView .split-feature .split-copy h2{
+  margin-top:8px !important;
+  margin-bottom:14px !important;
+}
+#homeView .split-feature .split-copy > p:not(.eyebrow){
+  margin-bottom:18px !important;
+}
+
+#homeView .store-section,
+#homeView .store-section .store-image,
+#homeView .store-section .store-copy,
+#homeView .split-feature.store-block,
+#homeView .split-feature.store-block .split-image,
+#homeView .split-feature.store-block .split-copy{
+  min-height:390px !important;
+}
+#homeView .store-section .store-copy{
+  padding:40px 48px !important;
+}
+
+#homeView > .split-feature + .split-feature{
+  margin-top:20px !important;
+}
+#homeView > .split-feature + .home-section{
+  padding-top:58px !important;
+}
+
+@media (min-width:1600px){
+  #homeView .split-feature,
+  #homeView .split-feature .split-image,
+  #homeView .split-feature .split-copy{
+    min-height:440px !important;
+  }
+  #homeView .store-section,
+  #homeView .store-section .store-image,
+  #homeView .store-section .store-copy{
+    min-height:410px !important;
+  }
+}
+
+@media (max-width:1100px){
+  #homeView .split-feature,
+  #homeView .split-feature .split-image,
+  #homeView .split-feature .split-copy,
+  #homeView .store-section,
+  #homeView .store-section .store-image,
+  #homeView .store-section .store-copy{
+    min-height:350px !important;
+  }
+  #homeView .split-feature .split-copy,
+  #homeView .store-section .store-copy{
+    padding:32px !important;
+  }
+}
+
+@media (max-width:760px){
+  #homeView .split-feature,
+  #homeView .store-section{
+    min-height:0 !important;
+  }
+  #homeView .split-feature .split-image,
+  #homeView .store-section .store-image{
+    min-height:250px !important;
+  }
+  #homeView .split-feature .split-copy,
+  #homeView .store-section .store-copy{
+    min-height:0 !important;
+    padding:26px 20px !important;
+  }
+}
+</style>
+<style>
+/* v17 — three large blocks combined into one compact editorial section */
+#homeView .service-hub{
+  padding-top:64px;
+  padding-bottom:72px;
+}
+.service-hub-head{
+  display:grid;
+  grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);
+  gap:48px;
+  align-items:end;
+  margin-bottom:28px;
+}
+.service-hub-head h2{
+  max-width:760px;
+  margin:7px 0 0;
+  font-size:clamp(32px,3.2vw,52px);
+  line-height:1.02;
+  letter-spacing:-.04em;
+  font-weight:560;
+}
+.service-hub-lead{
+  max-width:520px;
+  margin:0 0 3px auto;
+  color:var(--muted);
+  line-height:1.55;
+  font-size:15px;
+}
+.service-hub-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:14px;
+}
+.service-hub-card{
+  min-height:300px;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background:#f8f5f0;
+  padding:24px 24px 22px;
+  display:flex;
+  flex-direction:column;
+}
+.service-hub-card-dark{
+  background:#181715;
+  border-color:#181715;
+  color:#fff;
+}
+.service-hub-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  margin-bottom:38px;
+}
+.service-hub-number{
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:.08em;
+}
+.service-hub-card-dark .service-hub-number{
+  color:#a9a39c;
+}
+.service-hub-card .eyebrow{
+  margin:0;
+}
+.service-hub-card-dark .eyebrow{
+  color:#d5ccc4;
+}
+.service-hub-card h3{
+  max-width:430px;
+  margin:0 0 12px;
+  font-size:clamp(22px,1.7vw,30px);
+  line-height:1.08;
+  letter-spacing:-.025em;
+}
+.service-hub-card > p:not(.eyebrow){
+  max-width:440px;
+  margin:0 0 24px;
+  color:var(--muted);
+  line-height:1.5;
+  font-size:14px;
+}
+.service-hub-card-dark > p:not(.eyebrow){
+  color:#cbc5be;
+}
+.service-hub-action{
+  width:100%;
+  min-height:48px;
+  margin-top:auto;
+  padding:0 4px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:14px;
+  border:0;
+  border-top:1px solid var(--line);
+  background:transparent;
+  color:var(--text);
+  font-weight:650;
+  text-align:left;
+}
+.service-hub-card-dark .service-hub-action{
+  border-top-color:#403d39;
+  color:#fff;
+}
+.service-hub-action span{
+  font-size:18px;
+  transition:transform .2s ease;
+}
+.service-hub-action:hover span{
+  transform:translateX(4px);
+}
+
+@media(max-width:1050px){
+  .service-hub-head{
+    grid-template-columns:1fr;
+    gap:16px;
+  }
+  .service-hub-lead{
+    margin-left:0;
+  }
+  .service-hub-grid{
+    grid-template-columns:1fr;
+  }
+  .service-hub-card{
+    min-height:220px;
+  }
+  .service-hub-top{
+    margin-bottom:24px;
+  }
+}
+
+@media(max-width:760px){
+  #homeView .service-hub{
+    padding-top:48px;
+    padding-bottom:56px;
+  }
+  .service-hub-head{
+    margin-bottom:22px;
+  }
+  .service-hub-grid{
+    gap:10px;
+  }
+  .service-hub-card{
+    min-height:0;
+    padding:20px;
+  }
+  .service-hub-top{
+    margin-bottom:22px;
+  }
+}
+</style>
+<style>
+/* v18 — single-line service hub heading */
+.service-hub-head{
+  display:block !important;
+  margin-bottom:28px;
+}
+.service-hub-head > div{
+  width:100%;
+}
+.service-hub-head h2{
+  max-width:none !important;
+  white-space:nowrap;
+  font-size:clamp(28px,3vw,48px) !important;
+  line-height:1.05 !important;
+}
+.service-hub-lead{
+  display:none !important;
+}
+
+@media(max-width:1100px){
+  .service-hub-head h2{
+    white-space:normal;
+  }
+}
+</style>
+
+<style>
+.contact-map{position:relative;min-height:430px;border-radius:16px;overflow:hidden;background:#dfd7ce}
+.contact-map iframe{position:absolute;inset:0;display:block;width:100%;height:100%;border:0}
+.contact-map-link{position:absolute;bottom:16px;left:16px;background:#fff;color:#151412;padding:12px 16px;border-radius:10px;font-size:13px;box-shadow:0 2px 12px rgba(0,0,0,.12)}
+.contact-map-link:focus-visible{outline:2px solid #711b39;outline-offset:3px}
+@media(max-width:900px){.contact-map{min-height:380px}}
+</style>
+<style>.language-switch{display:flex;flex-shrink:0;gap:2px;padding:3px;border:1px solid var(--line);border-radius:999px;background:#fff}.language-switch button{min-width:38px;height:36px;padding:0 8px;border:0;border-radius:999px;background:transparent;font-size:12px;font-weight:650}.language-switch button.active{background:var(--dark);color:#fff}.language-switch button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}html[lang="ru"] .main-nav{gap:12px}html[lang="ru"] .nav-link{font-size:12px}html[lang="ru"] .catalog-head h1{white-space:normal!important}html[lang="ru"] .collection-tabs{flex-wrap:wrap}@media(max-width:1400px){.topbar{grid-template-columns:200px 1fr auto;padding-left:20px;padding-right:20px}.search-box{width:190px}.telegram-top{display:none}}@media(max-width:1100px) and (min-width:901px){.topbar{grid-template-columns:160px 1fr auto}.brand-logo{width:145px}.main-nav{gap:9px}.nav-link{font-size:11px}html[lang="ru"] .nav-link{font-size:10px}.search-box{width:140px}}@media(max-width:900px){.topbar{grid-template-columns:1fr auto;padding:0 15px}.search-box{width:100%}.language-switch button{min-width:33px;height:32px;padding:0 6px}}@media(max-width:380px){.brand-logo{width:105px}.header-actions{gap:5px}}</style><style>.category-cards{grid-template-columns:repeat(2,minmax(0,1fr))}</style><style>@media(max-width:900px){body{padding-bottom:72px}.main-nav{display:flex;position:fixed;bottom:0;left:0;right:0;justify-content:flex-start;gap:20px;height:62px;padding:0 16px;overflow-x:auto;background:var(--panel);border-top:1px solid var(--line);z-index:90}.main-nav .nav-link{padding:18px 0 14px;flex-shrink:0;font-size:12px;min-height:44px}.floating-tg{bottom:78px}.collection-tabs{flex-wrap:wrap}.modal-title-row h2{font-size:30px}.catalog-meta{white-space:normal;flex-wrap:wrap}.contact-card a{overflow-wrap:anywhere}}@media(max-width:380px){.header-actions{gap:4px}.icon-btn{width:36px;height:36px}.brand-logo{width:98px}.product-title-row h3{font-size:13px}}</style><style>@media(min-width:1401px){.main-nav{gap:15px}.topbar{padding:0 28px}}.subnav button.accent{background:var(--dark);color:#fff;border-color:var(--dark)}</style>
+</head>
+<body>
+<!-- NAQSHIN official SVG logo + supplied Naqshin product imagery integrated on 2026-09-19 -->
+<header class="topbar">
+<button aria-label="Naqshin bosh sahifa" class="brand" id="homeBtn"><img alt="NAQSHIN — Naqsh bilan yangicha uslub" class="brand-logo" src="img/bf851254f6df.svg"/></button>
+<nav class="main-nav">
+<button class="nav-link" data-view="catalog">Kolleksiya</button><button class="nav-link" data-view="patterns">Naqsh kutubxonasi</button><button class="nav-link" data-view="service">Xizmatlar</button><button class="nav-link" data-view="about">Naqshin haqida</button><button class="nav-link" data-view="process">Jarayon</button><button class="nav-link" data-view="contact">Kontakt</button>
+</nav>
+<div class="header-actions"><div class="language-switch" data-no-translate role="group" aria-label="Til / Язык"><button type="button" data-lang="uz" lang="uz">UZ</button><button type="button" data-lang="ru" lang="ru">RU</button></div><label class="search-box"><svg viewbox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg><input id="globalSearch" placeholder="Kiyim yoki naqsh qidiring…"/></label><button aria-label="Sevimlilar" class="icon-btn" id="favoritesBtn">♡<span class="badge" id="favoritesCount">0</span></button><button class="telegram-top" data-telegram="">Telegram</button><button class="icon-btn fs-btn" id="fullscreenBtn">⛶</button></div>
+</header>
+<main>
+<section class="view active" id="homeView">
+<section class="home-section"><div class="section-head"><div><p class="eyebrow">KATEGORIYALAR</p><h2>Kim uchun tanlaysiz?</h2></div></div><div class="category-cards" id="homeCategories"></div></section>
+<section class="home-section"><div class="section-head"><div><p class="eyebrow">YANGI KOLLEKSIYA</p><h2>Yangi qo‘shilganlar</h2></div><button class="text-link" data-view="catalog">Barchasini ko‘rish →</button></div><div class="home-products" id="homeProducts"></div></section>
+<section class="home-section ornament-browser-section" id="ornamentBrowserSection">
+<div class="section-head ornament-browser-head">
+<div>
+<p class="eyebrow">NAQSH KUTUBXONASI</p>
+<h2>Avval naqshni tanlang.</h2>
+<p class="ornament-browser-intro">
+        Ornamentni tanlang. Keyingi oynada kiyim turini belgilang va naqshning
+        kiyimdagi 4 xil AI mockup variantini yarating.
+      </p>
+</div>
+<button class="text-link ornament-source-link" id="showAllOrnamentsBtn" type="button">Barchasini ko‘rish →</button>
+</div>
+<div class="ornament-grid" id="ornamentGrid"></div><div class="ornament-catalog-count" id="ornamentCatalogCount">8 ta naqsh ko‘rsatilmoqda</div>
+</section>
+<section class="home-section service-hub" id="serviceHub">
+<div class="service-hub-head">
+<div>
+<p class="eyebrow">XIZMATLAR VA DO‘KON</p>
+<h2>Naqshin bilan sizga qulay yo‘lni tanlang.</h2>
+</div>
+<p class="service-hub-lead">
+      Tayyor kiyimga naqsh tikish, korporativ buyurtma yoki do‘konda kolleksiyani jonli ko‘rish.
+    </p>
+</div>
+<div class="service-hub-grid">
+<article class="service-hub-card service-hub-card-dark">
+<div class="service-hub-top">
+<span class="service-hub-number">01</span>
+<p class="eyebrow">O‘Z KIYIMINGIZGA TIKUV</p>
+</div>
+<h3>Kiyimingizni olib keling — naqshini biz tikamiz.</h3>
+<p>Naqsh, rang va joylashuvni birga tanlaymiz. Professional uskunada sifatli tikuv.</p>
+<button class="service-hub-action service-hub-action-light" data-view="service">
+        Xizmatni ko‘rish <span>→</span>
+</button>
+</article>
+<article class="service-hub-card">
+<div class="service-hub-top">
+<span class="service-hub-number">02</span>
+<p class="eyebrow">KORPORATIV BUYURTMA</p>
+</div>
+<h3>Forma, logotip tikuvi va korporativ sovg‘alar.</h3>
+<p>Restoran, mehmonxona, bank, turizm, do‘kon va maktablar uchun kichik va katta tirajlar.</p>
+<button class="service-hub-action" data-view="corporate">
+        Batafsil <span>→</span>
+</button>
+</article>
+<article class="service-hub-card">
+<div class="service-hub-top">
+<span class="service-hub-number">03</span>
+<p class="eyebrow">DO‘KON</p>
+</div>
+<h3>Kiyimlarni jonli ko‘ring.</h3>
+<p>Darxon, Oqqorg‘on 29. Sizni 10:00–20:00 oralig‘ida kutamiz.</p>
+<button class="service-hub-action" data-view="contact">
+        Kontaktlar <span>→</span>
+</button>
+</article>
+</div>
+</section>
+
+
+</section>
+<section class="view" id="catalogView"><div class="catalog-layout"><aside class="sidebar"><p class="eyebrow">KATALOG</p><h2>Filtr</h2><div class="sidebar-block"><h3>Bo‘lim</h3><div class="category-list" id="deptFilters"></div></div><div class="sidebar-block legacy-type-filter hidden"><h3>Kiyim turi</h3><div class="check-list" id="typeFilters"></div></div><div class="sidebar-block"><h3>O‘lcham</h3><div class="chip-row" id="sizeFilters"></div></div><div class="sidebar-block"><h3>Rang</h3><div class="color-filter" id="colorFilters"></div></div><div class="sidebar-block"><h3>Naqsh uslubi</h3><div class="check-list" id="styleFilters"></div></div><div class="sidebar-block"><h3>Naqsh nomi</h3><div class="check-list" id="patternFilters"></div></div><div class="sidebar-block"><h3>Naqsh joylashuvi</h3><div class="check-list" id="placementFilters"></div></div><div class="sidebar-block"><h3>Narx</h3><div class="price-range"><input id="minPrice" min="0" placeholder="min" step="50000" type="number"/><input id="maxPrice" min="0" placeholder="max" step="50000" type="number"/></div></div><div class="sidebar-block"><h3>Holati</h3><div class="check-list" id="statusFilters"></div></div><button class="reset-btn" id="resetFilters">Filtrlarni tozalash</button></aside><section class="catalog-content"><div class="catalog-head"><div><p class="eyebrow">KOLLEKSIYA</p><h1>Naqshni tanlang.<br/>Kiyimingizni toping.</h1><p class="lead">Ayollar va erkaklar kiyimlari. Naqsh, o‘lcham, rang va holat bo‘yicha filtrlang.</p></div><div class="catalog-meta"><span id="resultCount">0 ta mahsulot</span><select id="sortSelect"><option value="featured">Tavsiya etilgan</option><option value="new">Yangi qo‘shilganlar</option><option value="price-asc">Narx: arzondan</option><option value="price-desc">Narx: qimmatdan</option><option value="best">Ko‘p sotilgan</option></select></div></div><div class="selected-filters" id="selectedFilters"></div><div class="collection-tabs"><button class="collection-tab active" data-tag="all">Barchasi</button><button class="collection-tab" data-tag="new">Yangi kolleksiya</button><button class="collection-tab" data-tag="look">Look</button><button class="collection-tab" data-tag="gift">Sovg‘a g‘oyalari</button><button class="collection-tab" data-tag="unique">Yagona nusxa</button><button class="collection-tab" data-tag="sale">Chegirma</button><button class="collection-tab" data-tag="corporate">Korporativ</button></div><div class="product-grid" id="productGrid"><div class="skeleton-card"><div class="skeleton"></div><div></div></div><div class="skeleton-card"><div class="skeleton"></div><div></div></div><div class="skeleton-card"><div class="skeleton"></div><div></div></div></div><div class="empty-state hidden" id="emptyState"><h3>Bunday mahsulot topilmadi</h3><p>Filtrlarni o‘zgartiring. Quyida eng yaqin variantlarni ko‘rsatish uchun filtrlarni tozalashingiz mumkin.</p><button class="primary" id="emptyReset">Barcha mahsulotlar</button></div></section></div></section>
+<section class="view" id="patternsView"><div class="page"><div class="content-hero"><p class="eyebrow">NAQSH KUTUBXONASI</p><h1>Naqshning ma’nosini bilib tanlang.</h1><p class="lead">Naqshin’ning asosiy farqi — naqsh faqat bezak emas. Har bir motivning kelib chiqishi, ma’nosi va tavsiya etilgan joylashuvi bor.</p></div><div class="subnav" id="patternStyleNav"></div><div class="pattern-grid" id="patternLibrary"></div><div class="hidden" id="patternDetail"></div></div></section>
+<section class="view" id="serviceView"><div class="page"><div class="content-hero"><p class="eyebrow">XIZMAT</p><h1>Kiyimingizni olib keling — naqshini biz tikamiz.</h1><p class="lead">Mijoz o‘z kiyimini olib keladi, naqsh tanlaydi, narx va muddat tasdiqlanadi va tayyor kiyimni olib ketadi.</p></div><div class="info-grid"><div class="info-card"><span>01</span><h3>Kiyimni olib kelasiz</h3><p>Mato va kiyim holatini tekshiramiz.</p></div><div class="info-card"><span>02</span><h3>Naqsh tanlaysiz</h3><p>Kutubxonadan yoki individual dizayn.</p></div><div class="info-card"><span>03</span><h3>Narx va muddat</h3><p>Naqsh o‘lchami va murakkabligiga qarab.</p></div></div><div class="service-choice"><div class="service-choice-card"><p class="eyebrow">1-YO‘L</p><h3>Naqshin kutubxonasidan naqsh tanlash</h3><p>Tayyor naqshlardan birini tanlaysiz, rang va joylashuvni moslashtiramiz.</p><button class="outline" data-view="patterns">Naqshlarni ko‘rish</button></div><div class="service-choice-card accent-card"><p class="eyebrow" style="color:#d8cec5">2-YO‘L</p><h3>O‘z dizayningizni yuklash</h3><p>Siz yuborgan rasm, logo yoki grafikani kashta uchun tayyorlab, o‘z kiyimingizga tikamiz.</p><button class="primary" data-design-order="" style="background:#fff;color:#171412">Dizaynni yuklash</button></div></div><div class="service-layout"><div><h2>Taxminiy narx oralig‘i</h2><div class="table-wrap"><table class="data-table"><tr><th>Naqsh</th><th>O‘lcham</th><th>Narx</th></tr><tr><td>Kichik</td><td>10–15 sm</td><td>[to‘ldirilsin]</td></tr><tr><td>O‘rta</td><td>15–25 sm</td><td>[to‘ldirilsin]</td></tr><tr><td>Katta</td><td>25+ sm</td><td>[to‘ldirilsin]</td></tr></table></div><h2>Qabul qilinadigan matolar</h2><ul class="bullet-list"><li>Paxta</li><li>Jinsi</li><li>Zig‘ir</li><li>Gabardin va zich kostyum matolari</li></ul><h2>Qabul qilinmaydigan holatlar</h2><ul class="bullet-list"><li>Juda yupqa trikotaj</li><li>Teri</li><li>Eski yoki yirtiq kiyim</li></ul></div><div><h2>Naqsh joylashuvi</h2><div class="placement-demo"><div class="shirt"><i class="pin p1">1</i><i class="pin p2">2</i><i class="pin p3">3</i><i class="pin p4">4</i></div></div><p class="muted">Ko‘krak · yeng · etak · orqa</p></div></div><div class="section-head"><div><p class="eyebrow">OLDIN / KEYIN</p><h2>Ish namunalari</h2></div></div><div class="portfolio-grid" id="beforeAfter"></div><br/><div class="form-card"><h2>Maslahat uchun ariza</h2><form class="form-grid" id="serviceForm"><div class="field"><label>Ism *</label><input name="name" required=""/></div><div class="field"><label>Telefon *</label><input data-phone="" name="phone" placeholder="+998 (__) ___-__-__" required=""/></div><div class="field"><label>Kiyim turi *</label><input name="garment" required=""/></div><div class="field"><label>Naqsh</label><select name="pattern"><option>Maslahat kerak</option><option>Anor</option><option>Buxoro suzanisi</option><option>Islimiy</option></select></div><div class="field full"><label>Kiyim fotosi</label><input accept="image/*" name="photo" type="file"/></div><div class="field full"><label>Izoh</label><textarea name="comment"></textarea></div><input class="hidden" name="website" tabindex="-1" type="text"/><div class="field full"><button class="primary" type="submit">Ariza yuborish</button></div></form><div class="success hidden" id="serviceSuccess">Arizangiz qabul qilindi. 1 soat ichida bog‘lanamiz.</div></div><br/><div class="section-head"><h2>Savol-javob</h2></div><div class="faq-list" id="serviceFaq"></div></div></section>
+<section class="view" id="corporateView"><div class="page"><div class="content-hero"><p class="eyebrow">KORPORATIV BUYURTMA</p><h1>Brendingizni matoda aniq ifodalang.</h1><p class="lead">Restoran, mehmonxona, turizm, bank, do‘kon va maktablar uchun forma, logotip tikuvi va korporativ sovg‘alar.</p></div><div class="info-grid"><div class="info-card"><span>01</span><h3>Logotip tikuvi</h3><p>Logotip digitizing qilinadi va matoga mos tikuv parametrlari tanlanadi.</p></div><div class="info-card"><span>02</span><h3>Milliy uslubdagi forma</h3><p>Korporativ ranglarga mos milliy aksent.</p></div><div class="info-card"><span>03</span><h3>Korporativ sovg‘a</h3><p>Kiyim va aksessuarlarga individual kashta.</p></div></div><br/><div class="table-wrap"><table class="data-table"><tr><th>Tiraj</th><th>Narx tamoyili</th><th>Taxminiy muddat</th></tr><tr><td>10 dona</td><td>[to‘ldirilsin]</td><td>[to‘ldirilsin]</td></tr><tr><td>30 dona</td><td>[to‘ldirilsin]</td><td>[to‘ldirilsin]</td></tr><tr><td>50 dona</td><td>[to‘ldirilsin]</td><td>[to‘ldirilsin]</td></tr><tr><td>100+ dona</td><td>Individual hisob</td><td>Individual</td></tr></table></div><br/><div class="section-head"><h2>Portfolio</h2></div><div class="portfolio-grid" id="corpPortfolio"></div><br/><div class="form-card"><h2>Korporativ ariza</h2><form class="form-grid" id="corpForm"><div class="field"><label>Kompaniya nomi *</label><input name="company" required=""/></div><div class="field"><label>Aloqa shaxsi *</label><input name="contact" required=""/></div><div class="field"><label>Telefon *</label><input data-phone="" name="phone" required=""/></div><div class="field"><label>Kiyim turi *</label><input name="garment" required=""/></div><div class="field"><label>Soni *</label><input min="1" name="qty" required="" type="number"/></div><div class="field"><label>Logotip fayli</label><input accept="image/*,.pdf,.ai,.svg" name="logo" type="file"/></div><div class="field full"><label>Izoh</label><textarea name="comment"></textarea></div><div class="field full"><button class="primary" type="submit">Ariza yuborish</button></div></form><div class="success hidden" id="corpSuccess">Arizangiz qabul qilindi. 1 soat ichida bog‘lanamiz.</div></div></div></section>
+<section class="view" id="aboutView"><div class="page"><div class="content-hero"><p class="eyebrow">BIZ HAQIMIZDA</p><h1>Milliy naqshga hurmat. Zamonaviy texnologiyada aniqlik.</h1><p class="lead">NAQSHIN — Toshkent shahrida, Darxon, Oqqorg‘on 29 manzilida joylashgan kompyuterli tikuv ustaxonasi va do‘kon.</p></div><img loading="lazy" decoding="async" alt="Naqshin ustaxonasi" src="img/47b7b85c5a7a.webp" style="width:100%;height:520px;object-fit:cover;border-radius:18px"/><div class="stats"><div class="stat"><strong>6</strong><span>kishilik jamoa</span></div><div class="stat"><strong>12</strong><span>ignali FEIYA uskuna</span></div><div class="stat"><strong>3</strong><span>kiyim / kun o‘rtacha</span></div><div class="stat"><strong>50+</strong><span>ip ranglari</span></div></div><div class="service-layout"><div><h2>Biz nima qilamiz</h2><p class="lead">Tayyor kiyimlarga o‘zbek milliy naqshlari tikamiz: suzani gullari, anor, islimiy va boshqa motivlar. Dizayn Adobe Illustrator va Photoshop’da ishlanadi, so‘ng digitizing qilinib tikuvga uzatiladi. Mijoz o‘z kiyimini olib kelishi ham mumkin.</p></div><div><h2>Qadriyatlar</h2><ul class="bullet-list"><li>Aniq tikuv sifati</li><li>Milliy naqshga hurmat</li><li>Har bir buyurtmaga shaxsiy yondashuv</li></ul></div></div><div class="section-head"><h2>Jamoa</h2></div><div class="team-grid"><div class="team-card"><div class="avatar"><img loading="lazy" decoding="async" src="img/d611740f5a7b.webp"/></div><h3>Ish boshqaruvchi</h3><p class="muted">Ism va foto buyurtmachi tomonidan beriladi.</p></div><div class="team-card"><div class="avatar"><img loading="lazy" decoding="async" src="img/3461114054f1.webp"/></div><h3>3 nafar tikuvchi</h3><p class="muted">Ismlar va fotolar [to‘ldirilsin].</p></div><div class="team-card"><div class="avatar"><img loading="lazy" decoding="async" src="img/fcc26078ca39.webp"/></div><h3>2 nafar dizayner</h3><p class="muted">Ismlar va fotolar [to‘ldirilsin].</p></div></div></div></section>
+<section class="view" id="processView"><div class="page"><div class="content-hero"><p class="eyebrow">USTAXONA / JARAYON</p><h1>Nega yaxshi kashta vaqt va aniqlik talab qiladi?</h1><p class="lead">Har bir bosqich ketma-ket bajariladi: dizayn, digitizing, sinov tikuv, asosiy tikuv, sifat nazorati va topshirish.</p></div><div class="process-list" id="processList"></div><br/><button class="primary" data-view="contact">Jarayonni jonli ko‘rish uchun do‘konga tashrif buyuring</button></div></section>
+<section class="view" id="contactView"><div class="page"><div class="content-hero"><p class="eyebrow">KONTAKT</p><h1>Do‘kon va ustaxona.</h1><p class="lead">Darxon, Oqqorg‘on 29. Ish vaqti: 10:00–20:00.</p></div><div class="contact-grid"><div class="contact-card"><h2>Kontakt ma’lumotlari</h2><p><b>Manzil:</b><br/>Darxon (Oqqorg‘on 29)</p><p><b>Telefon:</b><br/>+9989 50 104 30 30</p><p><b>Telegram:</b><br/><a href="https://t.me/naqshin_aloqa" target="_blank" rel="noopener noreferrer">@naqshin_aloqa</a></p><p><b>Instagram:</b><br/><a href="https://www.instagram.com/naqshinkiyim/" target="_blank" rel="noopener noreferrer">@naqshinkiyim</a></p><p><b>E-mail:</b><br/><a href="mailto:naqshinkiyim@gmail.com">naqshinkiyim@gmail.com</a></p><p><b>Ish vaqti:</b><br/>10:00–20:00</p><button class="primary" data-telegram="">Telegramda yozish</button></div><div class="contact-map"><iframe title="NAQSHIN — Darxon, Oqqorg‘on 29 xaritasi" src="https://maps.google.com/maps?q=41.3295,69.3051667&amp;z=17&amp;output=embed" width="100%" height="100%" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><a class="contact-map-link" href="https://www.google.com/maps/search/?api=1&amp;query=41.3295%2C69.3051667" target="_blank" rel="noopener noreferrer">Katta xaritada ochish ↗</a></div></div><br/><div class="form-card"><h2>Bog‘lanish formasi</h2><form class="form-grid" id="contactForm"><div class="field"><label>Ism *</label><input name="name" required=""/></div><div class="field"><label>Telefon *</label><input data-phone="" name="phone" required=""/></div><div class="field full"><label>Xabar *</label><textarea name="message" required=""></textarea></div><div class="field full"><button class="primary" type="submit">Yuborish</button></div></form><div class="success hidden" id="contactSuccess">Xabaringiz qabul qilindi.</div></div></div></section>
+<section class="view" id="faqView"><div class="page"><div class="content-hero"><p class="eyebrow">FAQ</p><h1>Ko‘p beriladigan savollar.</h1></div><div class="faq-list" id="mainFaq"></div></div></section>
+<section class="view" id="deliveryView"><div class="page"><div class="content-hero"><p class="eyebrow">YETKAZIB BERISH VA TO‘LOV</p><h1>Buyurtma shartlari.</h1><p class="lead">Aniq yetkazib berish narxi, hududlar va to‘lov usullari buyurtmachi tomonidan to‘ldiriladi.</p></div><div class="info-grid"><div class="info-card"><span>01</span><h3>Toshkent bo‘ylab</h3><p>[muddat va narx to‘ldirilsin]</p></div><div class="info-card"><span>02</span><h3>O‘zbekiston bo‘ylab</h3><p>[yetkazib berish xizmati va tarif to‘ldirilsin]</p></div><div class="info-card"><span>03</span><h3>To‘lov</h3><p>Birinchi bosqichda ariza orqali. Payme/Click — 2-bosqich.</p></div></div></div></section>
+</main>
+<footer class="footer"><div class="footer-grid"><div class="footer-brand"><img loading="lazy" decoding="async" alt="NAQSHIN — Naqsh bilan yangicha uslub" class="footer-logo" src="img/586fbb5c8989.svg"/><p>Maxsus naqsh va dizaynlar bilan bezatilgan kiyimlar, professional kompyuterli tikuv.</p><a href="https://www.instagram.com/naqshinkiyim/" target="_blank" rel="noopener noreferrer">Instagram · @naqshinkiyim</a><a href="https://t.me/naqshin_aloqa" target="_blank" rel="noopener noreferrer">Telegram · @naqshin_aloqa</a><a href="mailto:naqshinkiyim@gmail.com">naqshinkiyim@gmail.com</a></div><div><h4>Katalog</h4><a data-dept-link="Ayollar">Ayollar</a><a data-dept-link="Erkaklar">Erkaklar</a></div><div><h4>Xizmatlar</h4><a data-view="service">O‘z kiyimingizga tikuv</a><a data-view="corporate">Korporativ buyurtma</a><a data-view="patterns">Naqsh kutubxonasi</a></div><div><h4>Kompaniya</h4><a data-view="about">Biz haqimizda</a><a data-view="process">Jarayon</a><a data-view="contact">Kontakt</a><a data-view="faq">Savol-javob</a><a data-view="delivery">Yetkazib berish va to‘lov</a></div><div><h4>Kontakt</h4><p>Darxon, Oqqorg‘on 29</p><p>Telefon: +9989 50 104 30 30</p><p>Ish vaqti: 10:00–20:00</p><a data-telegram="">Telegram</a></div></div><div class="footer-bottom"><span>© 2026 NAQSHIN. Barcha huquqlar himoyalangan.</span><span>Maxfiylik siyosati · Ommaviy oferta</span></div></footer>
+<button class="floating-tg" data-telegram="" title="Telegram">TG</button>
+<div class="modal-backdrop hidden" id="productModal"><div class="product-modal-card"><button class="close-btn" id="closeProduct">×</button><div class="gallery"><div class="thumbs" id="modalThumbs"></div><div class="modal-main-image" id="zoomBox"><img loading="lazy" decoding="async" alt="" id="modalImage"/><span class="zoom-note">Bosib kattalashtiring</span></div></div><div class="modal-copy"><p class="eyebrow" id="modalCategory"></p><span class="product-badge" id="modalStatus"></span><div class="modal-title-row"><h2 id="modalTitle"></h2><button class="heart-large" id="modalFavorite">♡</button></div><p class="modal-price" id="modalPrice"></p><p class="modal-description" id="modalDescription"></p><button class="pattern-link" id="modalPatternLink"></button><div class="selector-block"><span>Rang</span><div class="modal-colors" id="modalColors"></div></div><div class="selector-block"><span>O‘lcham</span><div class="modal-sizes" id="modalSizes"></div><button class="pattern-link" id="sizeGuideBtn" style="margin-top:9px">O‘lcham jadvali</button></div><div class="detail-lines"><div class="detail-line"><span>Mato</span><b id="modalFabric"></b></div><div class="detail-line"><span>Tikuv turi</span><b>Kompyuterli kashta</b></div><div class="detail-line"><span>Naqsh o‘lchami</span><b id="modalEmbSize"></b></div><div class="detail-line"><span>Parvarish</span><b>30°C, teskari tomondan dazmollash</b></div><div class="detail-line"><span>Yetkazib berish</span><b>[to‘ldirilsin]</b></div></div><div class="modal-actions"><button class="primary" id="orderBtn">Buyurtma berish</button><button class="outline" id="productTelegram">Telegram orqali yozish</button></div><div class="similar"><h3>O‘xshash mahsulotlar</h3><div class="similar-row" id="similarProducts"></div></div></div></div></div>
+<aside class="favorites-drawer" id="favoritesDrawer"><div class="drawer-head"><div><p class="eyebrow">SEVIMLILAR</p><h2>Tanlanganlar</h2></div><button id="closeFavorites">×</button></div><div class="drawer-list" id="favoritesList"></div><div class="drawer-footer"><button class="primary" id="favToCatalog">Katalogga qaytish</button><p>Tanlov brauzer xotirasida saqlanadi.</p></div></aside><div class="drawer-scrim hidden" id="drawerScrim"></div>
+<div class="sheet-backdrop hidden" id="designOrderModal"><div class="sheet design-sheet"><button class="close-btn" data-close-sheet="designOrderModal">×</button><p class="eyebrow">INDIVIDUAL KASHTA</p><h2>O‘z dizayningizni yuklang</h2><p class="lead">Dizayningiz va kiyim haqidagi ma’lumotlarni qoldiring. Fayl brauzerda preview qilinadi; ishlab chiqarish uchun backend integratsiyasi ulanganda operatorga yuboriladi.</p><form class="form-grid" id="designOrderForm"><div class="field full"><label>Dizayn fayli *</label><div class="design-upload-zone"><div class="design-preview" id="designPreview"><span>Preview</span></div><div class="design-file-copy"><b>PNG · JPG · SVG · PDF</b><p>Kashta uchun imkon qadar aniq, yuqori sifatli fayl yuboring.</p><label class="file-button" for="designFile">Fayl tanlash</label><input accept="image/png,image/jpeg,image/webp,image/svg+xml,application/pdf,.svg,.pdf" class="hidden" id="designFile" name="designFile" required="" type="file"/><div class="upload-meta" id="designFileMeta">Fayl tanlanmagan</div></div></div></div><div class="field"><label>Kiyim turi *</label><select name="garment" required=""><option value="">Tanlang</option><option>Ko‘ylak / rubashka</option><option>Bluzka</option><option>Futbolka / polo</option><option>Xudi / svitshot</option><option>Pidjak / jaket</option><option>Shim / yubka</option><option>Jilet</option><option>Aksessuar</option><option>Boshqa</option></select></div><div class="field"><label>Naqsh joylashuvi *</label><select name="placement" required=""><option value="">Tanlang</option><option>Ko‘krak</option><option>Yeng</option><option>Yoqa</option><option>Etak</option><option>Orqa</option><option>Boshqa</option></select></div><div class="field"><label>Taxminiy o‘lcham *</label><select name="embroiderySize" required=""><option value="">Tanlang</option><option>Kichik · 10–15 sm</option><option>O‘rta · 15–25 sm</option><option>Katta · 25+ sm</option><option>Aniq bilmayman</option></select></div><div class="field"><label>Ip ranglari</label><input name="threadColors" placeholder="Masalan: bordo, oq, ko‘k"/></div><div class="field full"><label>Kiyim fotosi (ixtiyoriy)</label><input accept="image/*" name="garmentPhoto" type="file"/></div><div class="field"><label>Ism *</label><input name="name" required=""/></div><div class="field"><label>Telefon *</label><input data-phone="" name="phone" placeholder="+998 (__) ___-__-__" required=""/></div><div class="field"><label>Aloqa usuli *</label><select name="contact" required=""><option>Telegram</option><option>Telefon qo‘ng‘irog‘i</option></select></div><div class="field"><label>Kerakli muddat</label><input name="deadline" placeholder="Masalan: 5–7 kun ichida"/></div><div class="field full"><label>Izoh</label><textarea name="comment" placeholder="Dizayn, o‘lcham yoki kiyim bo‘yicha qo‘shimcha ma’lumot"></textarea></div><input class="hidden" name="website" tabindex="-1"/><div class="field full"><div class="design-note">Dizayn kashtaga mos kelishi tikuvdan oldin tekshiriladi. Zarur bo‘lsa dizayner kompozitsiya, rang yoki chiziq qalinligi bo‘yicha taklif beradi.</div></div><div class="field full"><button class="primary accent" type="submit">Individual buyurtma yuborish</button></div></form><div class="success hidden" id="designOrderSuccess">Ariza tayyorlandi. Backend integratsiyasi ulanganda dizayn fayli operatorga avtomatik yuboriladi.</div></div></div>
+<div class="sheet-backdrop hidden" id="orderModal"><div class="sheet"><button class="close-btn" data-close-sheet="orderModal">×</button><p class="eyebrow">BUYURTMA</p><h2>Ariza qoldiring</h2><div class="order-summary" id="orderSummary"></div><form class="form-grid" id="orderForm"><div class="field"><label>Ism *</label><input name="name" required=""/></div><div class="field"><label>Telefon *</label><input data-phone="" name="phone" placeholder="+998 (__) ___-__-__" required=""/></div><div class="field"><label>Mahsulot</label><input id="orderProduct" name="product" readonly=""/></div><div class="field"><label>O‘lcham *</label><select id="orderSize" name="size" required=""></select></div><div class="field"><label>Aloqa usuli *</label><select name="contact" required=""><option>Telegram</option><option>Telefon qo‘ng‘irog‘i</option></select></div><div class="field full"><label>Izoh</label><textarea name="comment"></textarea></div><input class="hidden" name="website" tabindex="-1"/><div class="field full"><button class="primary" type="submit">Arizani yuborish</button></div></form><div class="success hidden" id="orderSuccess">Arizangiz qabul qilindi. 1 soat ichida bog‘lanamiz.</div></div></div>
+<div class="sheet-backdrop hidden" id="sizeModal"><div class="sheet"><button class="close-btn" data-close-sheet="sizeModal">×</button><p class="eyebrow">O‘LCHAM JADVALI</p><h2>Asosiy o‘lchovlar</h2><table class="size-table"><tr><th>O‘lcham</th><th>Ko‘krak</th><th>Bel</th><th>Son</th></tr><tr><td>XS</td><td>82–86</td><td>62–66</td><td>88–92</td></tr><tr><td>S</td><td>86–90</td><td>66–70</td><td>92–96</td></tr><tr><td>M</td><td>90–94</td><td>70–74</td><td>96–100</td></tr><tr><td>L</td><td>94–100</td><td>74–80</td><td>100–106</td></tr><tr><td>XL</td><td>100–106</td><td>80–86</td><td>106–112</td></tr></table><p class="muted">Santimetrda. Yakuniy jadval buyurtmachi o‘lcham standartiga moslab tekshiriladi.</p></div></div>
+<div class="idle-screen hidden" id="idleScreen"><div class="idle-inner"><span class="brand-mark" style="margin:auto"><svg viewbox="0 0 64 64"><path d="M32 4c5 9 8 12 15 15-8 2-11 6-15 14-4-8-7-12-15-14 7-3 10-6 15-15Zm0 27c5 9 8 12 15 15-8 2-11 6-15 14-4-8-7-12-15-14 7-3 10-6 15-15Zm-28 1c9-5 12-8 15-15 2 8 6 11 14 15-8 4-12 7-14 15-3-7-6-10-15-15Zm27 0c9-5 12-8 15-15 2 8 6 11 14 15-8 4-12 7-14 15-3-7-6-10-15-15Z" fill="currentColor"></path></svg></span><h1>NAQSHIN</h1><p>Kolleksiyani ko‘rish uchun ekranga teging</p><div class="pulse"></div></div></div>
+<script>
+const IMAGES=["img/22686678c7cc.webp","img/22686678c7cc.webp","img/dba01d12afd3.webp","img/84abe9aa83ee.webp","img/5063781a511d.webp","img/5554b80ca6b8.webp","img/922dcf0d052f.webp","img/bd18f3111bb8.webp","img/2e220e508500.webp","img/4f4b3bcd97d1.webp","img/a60b7fc9f7cd.webp","img/df4a55afdbaf.webp","img/6502bfa22506.webp","img/e3b483a1893a.webp","img/f078ab0a47df.webp","img/9cbbaf0cb34a.webp","img/38565b95a8ac.webp","img/dc6a8fb627d6.webp","img/7fc46a081da6.webp","img/6f2c5d4ee756.webp","img/abe102dd479d.webp","img/e502975eafb5.webp","img/06d952aa84fe.webp","img/e88a2f62be47.webp","img/8e37aaafcc11.webp","img/99867ebbbf93.webp","img/41ef6001041c.webp","img/da3e3d79a123.webp"];
+const patternData=[
+{id:'anor',name:'Anor',style:'An’anaviy',origin:'O‘zbekiston',meaning:'Anor mo‘l-ko‘llik, baraka va avlod davomiyligi ramzi sifatida talqin qilinadi.',colors:'4–8 rang',stitches:'18 000–35 000',placement:'Ko‘krak, yeng, etak',image:IMAGES[0]},
+{id:'buxoro-suzani',name:'Buxoro suzanisi',style:'Gul naqsh',origin:'Buxoro',meaning:'Suzani an’anasidan ilhomlangan yirik gul motivlari tantanavorlik va iliqlik kayfiyatini beradi.',colors:'5–10 rang',stitches:'25 000–45 000',placement:'Orqa, ko‘krak, etak',image:IMAGES[1]},
+{id:'islimiy',name:'Islimiy',style:'An’anaviy',origin:'Samarqand',meaning:'Uzviy davom etuvchi barg va novda ritmi o‘sish va uyg‘unlik g‘oyasini ifodalaydi.',colors:'2–6 rang',stitches:'12 000–30 000',placement:'Yoqa, yeng, ko‘krak',image:IMAGES[2]},
+{id:'nurota-guli',name:'Nurota guli',style:'Gul naqsh',origin:'Nurota',meaning:'Nozik gul kompozitsiyasi yengil va nafis aksent sifatida ishlatiladi.',colors:'4–7 rang',stitches:'15 000–28 000',placement:'Ko‘krak, yeng',image:IMAGES[3]},
+{id:'samarqand-yulduzi',name:'Samarqand yulduzi',style:'Geometrik',origin:'Samarqand',meaning:'Geometrik ritm me’moriy bezaklardan ilhomlangan zamonaviy talqindir.',colors:'2–5 rang',stitches:'10 000–24 000',placement:'Ko‘krak, orqa',image:IMAGES[4]},
+{id:'shahrisabz-bargi',name:'Shahrisabz bargi',style:'Minimal',origin:'Shahrisabz',meaning:'Barg motivining soddalashtirilgan shakli minimal garderobga moslashtirilgan.',colors:'1–3 rang',stitches:'8 000–18 000',placement:'Yeng, yoqa',image:IMAGES[5]},
+{id:'fargona-islimi',name:'Farg‘ona islimi',style:'An’anaviy',origin:'Farg‘ona',meaning:'Yumshoq egri chiziqlar va mayda barglar uyg‘unligi klassik naqsh tiliga murojaat qiladi.',colors:'3–6 rang',stitches:'16 000–32 000',placement:'Ko‘krak, yeng, etak',image:IMAGES[6]},
+{id:'bodom',name:'Bodom',style:'Minimal',origin:'Farg‘ona',meaning:'Bodom shakli ixcham aksent sifatida kundalik kiyimlarga moslashtiriladi.',colors:'1–4 rang',stitches:'7 000–15 000',placement:'Ko‘krak, yoqa',image:IMAGES[7]}
+];
+const names=['Nafis','Zarafshon','Timsol','Lola','Meros','Bahor','Sabo','Oqshom','Istiqlol','Atlas','Ravnaq','Navo','Hilol','Durdona','Samar','Bodom','Anor','Nurota','Ziyo','Zebiniso','Sarbon','Moviy','Shabnam','Shahrisabz','Tilla','Oydin','Feruza','Navro‘z','Baraka','Sohibqiron','Sado','Orasta'];
+const typesByDept={
+'Ayollar':['Look','Ko‘ylaklar','Bluzkalar','Rubashkalar','Futbolkalar va longsliv','Xudi va svitshotlar','Shimlar','Yubkalar','Pidjaklar va jaketlar','Jiletlar','Ustki kiyim','Kompletlar','Uy kiyimi','Aksessuarlar'],
+'Erkaklar':['Rubashkalar','Futbolkalar va polo','Xudi va svitshotlar','Shimlar','Pidjaklar','Jiletlar','Ustki kiyim','Kompletlar','Aksessuarlar']};
+const depts=['Barchasi','Ayollar','Erkaklar'];
+const sizes=['XS','S','M','L','XL','XXL','3XL','2–3','4–5','6–7','8–9','10–11','12–14'];
+const colorPalette=[{key:'Oq',hex:'#f7f3ec'},{key:'Qora',hex:'#111111'},{key:'Bej',hex:'#d7c7ad'},{key:'Ko‘k',hex:'#30384b'},{key:'Yashil',hex:'#4c6654'},{key:'Qizil',hex:'#a32735'},{key:'Bordo',hex:'#711b39'}];
+const placements=['Ko‘krak','Yeng','Yoqa','Etak','Orqa'];const statuses=['Tafsilotlar so‘rov asosida'];const styles=['An’anaviy','Minimal','Geometrik','Gul naqsh'];
+const products=[{"id":10000,"name":"Ko‘k atirgul naqshi","dept":"Ayollar","type":"Rubashkalar","price":600000,"image":"img/ae2a20daa82b-card.webp","gallery":["img/ae2a20daa82b.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Ko‘k atirgul naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-2799","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_2799.JPG"},{"id":10001,"name":"Gul va geometrik bezak naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/7526e7910311-card.webp","gallery":["img/7526e7910311.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gul va geometrik bezak naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":1,"code":"NQ-3738","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3738.JPG"},{"id":10002,"name":"Gulli geometrik naqsh","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/c4e358804501-card.webp","gallery":["img/c4e358804501.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gulli geometrik naqsh","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":2,"code":"NQ-3847","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3847.JPG"},{"id":10003,"name":"Gulli hoshiya naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/3a2f18928d07-card.webp","gallery":["img/3a2f18928d07.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gulli hoshiya naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":3,"code":"NQ-3849","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3849.JPG"},{"id":10004,"name":"Islimiy guldasta naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/0611119e6ed2-card.webp","gallery":["img/0611119e6ed2.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Islimiy guldasta naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":4,"code":"NQ-3850","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3850.JPG"},{"id":10005,"name":"Majnuntol shoxlari naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/4731ea8c570c-card.webp","gallery":["img/4731ea8c570c.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Majnuntol shoxlari naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":5,"code":"NQ-3851","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3851.JPG"},{"id":10006,"name":"Rangli gullar naqshi","dept":"Ayollar","type":"Rubashkalar","price":400000,"image":"img/78077e99b39c-card.webp","gallery":["img/78077e99b39c.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Rangli gullar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":6,"code":"NQ-3852","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3852.JPG"},{"id":10007,"name":"Qizil gullar va novdalar naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/426ee95f0cdf-card.webp","gallery":["img/426ee95f0cdf.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Qizil gullar va novdalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":7,"code":"NQ-3870","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3870.JPG"},{"id":10008,"name":"Gulli novdalar naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/5a3acc230467-card.webp","gallery":["img/5a3acc230467.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gulli novdalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":8,"code":"NQ-3871","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3871.JPG"},{"id":10009,"name":"Gul va yurakchalar naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/20cb8c22afc7-card.webp","gallery":["img/20cb8c22afc7.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gul va yurakchalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":9,"code":"NQ-3872","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3872.JPG"},{"id":10010,"name":"Yarim doirali geometrik naqsh","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/a28b4cd3c6e8-card.webp","gallery":["img/a28b4cd3c6e8.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Yarim doirali geometrik naqsh","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":10,"code":"NQ-3873","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3873.JPG"},{"id":10011,"name":"Anor naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/12b2476b846f-card.webp","gallery":["img/12b2476b846f.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Anor naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":11,"code":"NQ-3874","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli rubashka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/IMG_3874.JPG"},{"id":10012,"name":"Ko‘k va zarg‘aldoq gullar naqshi","dept":"Ayollar","type":"Shimlar","price":700000,"image":"img/3169eb99112f-card.webp","gallery":["img/3169eb99112f.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Ko‘k va zarg‘aldoq gullar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":12,"code":"NQ-3853","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3853.JPG"},{"id":10013,"name":"Mayda geometrik naqsh","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/b75fd6fb9864-card.webp","gallery":["img/b75fd6fb9864.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Mayda geometrik naqsh","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":13,"code":"NQ-3854","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3854.JPG"},{"id":10014,"name":"Qora geometrik naqsh","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/4741e6a1922a-card.webp","gallery":["img/4741e6a1922a.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Qora geometrik naqsh","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":14,"code":"NQ-3855","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3855.JPG"},{"id":10015,"name":"Gul, yulduz va yurakchalar naqshi","dept":"Ayollar","type":"Shimlar","price":800000,"image":"img/baad5f590841-card.webp","gallery":["img/baad5f590841.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gul, yulduz va yurakchalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":15,"code":"NQ-3856","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3856.JPG"},{"id":10016,"name":"To‘pbarggul va novda naqshi","dept":"Ayollar","type":"Shimlar","price":700000,"image":"img/9d8b2b008e45-card.webp","gallery":["img/9d8b2b008e45.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"To‘pbarggul va novda naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":16,"code":"NQ-3857","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3857.JPG"},{"id":10017,"name":"Romb naqshi","dept":"Ayollar","type":"Shimlar","price":500000,"image":"img/343966c0e823-card.webp","gallery":["img/343966c0e823.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Romb naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":17,"code":"NQ-3858","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3858.JPG"},{"id":10018,"name":"Dala gullari naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/33f14f091610-card.webp","gallery":["img/33f14f091610.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Dala gullari naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":18,"code":"NQ-3859","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3859.JPG"},{"id":10019,"name":"Moviy to‘pbarggul naqshi","dept":"Ayollar","type":"Shimlar","price":700000,"image":"img/8639008e0e4e-card.webp","gallery":["img/8639008e0e4e.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Moviy to‘pbarggul naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":19,"code":"NQ-3860","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3860.JPG"},{"id":10020,"name":"Geometrik hoshiya naqshi","dept":"Ayollar","type":"Shimlar","price":700000,"image":"img/eb43bc683e7f-card.webp","gallery":["img/eb43bc683e7f.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Geometrik hoshiya naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":20,"code":"NQ-3861","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3861.JPG"},{"id":10021,"name":"Gul va bargli novda naqshi","dept":"Ayollar","type":"Shimlar","price":700000,"image":"img/ba29e6298e86-card.webp","gallery":["img/ba29e6298e86.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gul va bargli novda naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":21,"code":"NQ-3863","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3863.JPG"},{"id":10022,"name":"Geometrik hoshiya va gullar naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/110897e6b97b-card.webp","gallery":["img/110897e6b97b.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Geometrik hoshiya va gullar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":22,"code":"NQ-3864","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3864.JPG"},{"id":10023,"name":"Geometrik hoshiya naqshi","dept":"Ayollar","type":"Shimlar","price":700000,"image":"img/b3b803142137-card.webp","gallery":["img/b3b803142137.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Geometrik hoshiya naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":23,"code":"NQ-3865","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3865.JPG"},{"id":10024,"name":"Dala gullari naqshi","dept":"Ayollar","type":"Shimlar","price":800000,"image":"img/e9807ec5226e-card.webp","gallery":["img/e9807ec5226e.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Dala gullari naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":24,"code":"NQ-3868","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3868.JPG"},{"id":10025,"name":"Geometrik hoshiya va novda naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/39010af51284-card.webp","gallery":["img/39010af51284.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Geometrik hoshiya va novda naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":25,"code":"NQ-3877","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3877.JPG"},{"id":10026,"name":"Gulli chambarak va hoshiya naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/c9ece129d21d-card.webp","gallery":["img/c9ece129d21d.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gulli chambarak va hoshiya naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":26,"code":"NQ-3878","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3878.JPG"},{"id":10027,"name":"Ingichka geometrik hoshiya naqshi","dept":"Ayollar","type":"Shimlar","price":500000,"image":"img/7649c57012bd-card.webp","gallery":["img/7649c57012bd.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Ingichka geometrik hoshiya naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":27,"code":"NQ-3882","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/IMG_3882.JPG"},{"id":10028,"name":"Anorli novda naqshi","dept":"Ayollar","type":"Futbolkalar va longsliv","price":200000,"image":"img/d6cee1d7971c-card.webp","gallery":["img/d6cee1d7971c.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Anorli novda naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":28,"code":"NQ-4220","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli futbolka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"futbolkalar/IMG_4220.JPG"},{"id":10029,"name":"Ikat uslubidagi geometrik naqsh","dept":"Ayollar","type":"Futbolkalar va longsliv","price":300000,"image":"img/62539e74ebcd-card.webp","gallery":["img/62539e74ebcd.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Ikat uslubidagi geometrik naqsh","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":29,"code":"NQ-4221","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli futbolka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"futbolkalar/IMG_4221.JPG"},{"id":10030,"name":"Ko‘k va zarg‘aldoq geometrik naqsh","dept":"Ayollar","type":"Futbolkalar va longsliv","price":300000,"image":"img/1d604f72c04b-card.webp","gallery":["img/1d604f72c04b.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Ko‘k va zarg‘aldoq geometrik naqsh","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":30,"code":"NQ-4222","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli futbolka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"futbolkalar/IMG_4222.JPG"},{"id":10031,"name":"Anorli novda naqshi","dept":"Ayollar","type":"Futbolkalar va longsliv","price":200000,"image":"img/2d05828ec565-card.webp","gallery":["img/2d05828ec565.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Anorli novda naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":31,"code":"NQ-4223","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli futbolka. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"futbolkalar/IMG_4223.JPG"},{"id":20001,"name":"Gulli hoshiya naqshi","dept":"Ayollar","type":"Look","price":500000,"image":"img/8e1327a6b0f8-card.webp","gallery":["img/8e1327a6b0f8.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gulli hoshiya naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["look"],"bestseller":false,"newDays":0,"code":"NQ-LOOK-3732","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshin kiyimlari bilan tayyor obraz. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"look/IMG_3732.JPG"},{"id":20002,"name":"Gulli hoshiya naqshi","dept":"Ayollar","type":"Look","price":500000,"image":"img/ea39518ccc6d-card.webp","gallery":["img/ea39518ccc6d.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gulli hoshiya naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["look"],"bestseller":false,"newDays":0,"code":"NQ-LOOK-3733","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshin kiyimlari bilan tayyor obraz. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"look/IMG_3733.JPG"},{"id":20003,"name":"Gulli hoshiya naqshi","dept":"Ayollar","type":"Look","price":500000,"image":"img/9dfdf73f82f3-card.webp","gallery":["img/9dfdf73f82f3.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Gulli hoshiya naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["look"],"bestseller":false,"newDays":0,"code":"NQ-LOOK-3734","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshin kiyimlari bilan tayyor obraz. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"look/IMG_3734.JPG"},{"id":20004,"name":"Anorli novdalar naqshi","dept":"Ayollar","type":"Look","price":500000,"image":"img/ba4663aa7f45-card.webp","gallery":["img/ba4663aa7f45.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Anorli novdalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["look"],"bestseller":false,"newDays":0,"code":"NQ-LOOK-3736","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshin kiyimlari bilan tayyor obraz. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"look/IMG_3736.JPG"},{"id":20005,"name":"Yorilgan anor naqshi","dept":"Ayollar","type":"Look","price":500000,"image":"img/3c8543bfcd7b-card.webp","gallery":["img/3c8543bfcd7b.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Yorilgan anor naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["look"],"bestseller":false,"newDays":0,"code":"NQ-LOOK-3737","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshin kiyimlari bilan tayyor obraz. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"look/IMG_3737.JPG"},{"id":20006,"name":"Anorli novda naqshi","dept":"Ayollar","type":"Look","price":200000,"image":"img/aa3a57b71b35-card.webp","gallery":["img/aa3a57b71b35.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Anorli novda naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["look"],"bestseller":false,"newDays":0,"code":"NQ-LOOK-4224","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshin kiyimlari bilan tayyor obraz. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"look/IMG_4224.JPG"},{"id":20007,"name":"Anorli novda naqshi","dept":"Ayollar","type":"Look","price":200000,"image":"img/2aeaa8cfb705-card.webp","gallery":["img/2aeaa8cfb705.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Anorli novda naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["look"],"bestseller":false,"newDays":0,"code":"NQ-LOOK-4225","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshin kiyimlari bilan tayyor obraz. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"look/IMG_4225.JPG"},{"id":20008,"name":"Anorli novda naqshi","dept":"Ayollar","type":"Look","price":200000,"image":"img/beabb8b056d6-card.webp","gallery":["img/beabb8b056d6.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Anorli novda naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["look"],"bestseller":false,"newDays":0,"code":"NQ-LOOK-4226","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshin kiyimlari bilan tayyor obraz. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"look/IMG_4226.JPG"},{"id":20009,"name":"Islimiy guldasta naqshi","dept":"Ayollar","type":"Look","price":500000,"image":"img/8666b951fd03-card.webp","gallery":["img/8666b951fd03.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Islimiy guldasta naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["look"],"bestseller":false,"newDays":0,"code":"NQ-LOOK-4227","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshin kiyimlari bilan tayyor obraz. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"look/IMG_4227.JPG"},{"id":30000,"name":"Qizil gulli novdalar naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/fd319b92fb45-card.webp","gallery":["img/fd319b92fb45.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Qizil gulli novdalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-NEW-001","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/222 (1).jpg"},{"id":30001,"name":"Bej gulli novdalar naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/9df8da5e8ec2-card.webp","gallery":["img/9df8da5e8ec2.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Bej gulli novdalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-NEW-002","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/Creating_embroidered_white_culot…_2K_20261012153050.jpg"},{"id":30002,"name":"Kulrang gulli novdalar naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/93134352c963-card.webp","gallery":["img/93134352c963.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Kulrang gulli novdalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-NEW-003","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/Embroidered_white_culotte_jeans_…_2K_20261012153414.jpg"},{"id":30003,"name":"Pushti g‘unchali novda naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/b224db6d493b-card.webp","gallery":["img/b224db6d493b.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Pushti g‘unchali novda naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-NEW-004","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/Embroidered_white_jeans_product_…_2K_20261012154651.jpg"},{"id":30004,"name":"Bej gulli novdalar naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/14c65bcaabcc-card.webp","gallery":["img/14c65bcaabcc.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Bej gulli novdalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-NEW-005","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/Embroidery_design_for_white_culo…_2K_20261012153144.jpg"},{"id":30005,"name":"Kulrang gulli novdalar naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/a48cd8240933-card.webp","gallery":["img/a48cd8240933.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Kulrang gulli novdalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-NEW-006","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/Embroidery_on_white_denim_jeans_2K_20261012153408.jpg"},{"id":30006,"name":"Moviy gulli novda naqshi","dept":"Ayollar","type":"Shimlar","price":null,"image":"img/06f4c4cfba80-card.webp","gallery":["img/06f4c4cfba80.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Moviy gulli novda naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-NEW-007","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli shim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"shimlar/Replacing_flower_patterns_on_jeans_2K_20261012153700.jpg"},{"id":30007,"name":"Bug‘u va archazor naqshi","dept":"Ayollar","type":"Xudi va svitshotlar","price":null,"image":"img/95764378268b-card.webp","gallery":["img/95764378268b.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Bug‘u va archazor naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-NEW-008","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli xudi. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"hoodie/IMG_4246.JPG"},{"id":30008,"name":"Archazor manzarasi naqshi","dept":"Ayollar","type":"Xudi va svitshotlar","price":null,"image":"img/1a5f09ed8a97-card.webp","gallery":["img/1a5f09ed8a97.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Archazor manzarasi naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-NEW-009","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli xudi. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"hoodie/IMG_4249.JPG"},{"id":30009,"name":"Qovoq va kuzgi barglar naqshi","dept":"Ayollar","type":"Xudi va svitshotlar","price":null,"image":"img/8bcc7e3fd566-card.webp","gallery":["img/8bcc7e3fd566.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Qovoq va kuzgi barglar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":0,"code":"NQ-NEW-010","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli xudi. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"hoodie/IMG_4251.JPG"},{"id":40000,"name":"Qush va shoxlar naqshi","dept":"Erkaklar","type":"Xudi va svitshotlar","price":null,"image":"img/1b62623a9354-card.webp","gallery":["img/1b62623a9354.webp","img/933d4b99664a.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Qush va shoxlar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":-1,"code":"NQ-2026-001","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli kiyim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"hoodie/1 худи.jpg","sourceFiles":["hoodie/1 худи.jpg","hoodie/1 худи орка томони.jpg"]},{"id":40001,"name":"Qanotli qush naqshi","dept":"Erkaklar","type":"Xudi va svitshotlar","price":null,"image":"img/3cd2796653c5-card.webp","gallery":["img/3cd2796653c5.webp","img/66e2540f8c47.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Qanotli qush naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":-1,"code":"NQ-2026-002","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli kiyim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"hoodie/худи2.jpg","sourceFiles":["hoodie/худи2.jpg","hoodie/худи 2 доп.jpg"]},{"id":40002,"name":"Bug‘u va geometrik bezak naqshi","dept":"Ayollar","type":"Xudi va svitshotlar","price":null,"image":"img/912523803a4c-card.webp","gallery":["img/912523803a4c.webp","img/77998ad130f4.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Bug‘u va geometrik bezak naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":-1,"code":"NQ-2026-003","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli kiyim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"hoodie/худи3.jpg","sourceFiles":["hoodie/худи3.jpg","hoodie/худи 3 доп.jpg"]},{"id":40003,"name":"Qush va shoxlar naqshi","dept":"Ayollar","type":"Xudi va svitshotlar","price":null,"image":"img/15480eae5030-card.webp","gallery":["img/15480eae5030.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Qush va shoxlar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":-1,"code":"NQ-2026-004","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli kiyim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"hoodie/xudi4.jpg","sourceFiles":["hoodie/xudi4.jpg"]},{"id":40004,"name":"Qush va shoxlar naqshi","dept":"Ayollar","type":"Xudi va svitshotlar","price":null,"image":"img/42d9c8682f34-card.webp","gallery":["img/42d9c8682f34.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Qush va shoxlar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":-1,"code":"NQ-2026-005","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli kiyim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"hoodie/худи 4 2 вариант.jpg","sourceFiles":["hoodie/худи 4 2 вариант.jpg"]},{"id":40005,"name":"Moviy gulli novdalar naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/48fd503a682c-card.webp","gallery":["img/48fd503a682c.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Moviy gulli novdalar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":-1,"code":"NQ-2026-006","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli kiyim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/1 рр.jpg","sourceFiles":["rubashkalar/1 рр.jpg"]},{"id":40006,"name":"Pushti qushlar naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/e482790a0f6f-card.webp","gallery":["img/e482790a0f6f.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Pushti qushlar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":-1,"code":"NQ-2026-007","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli kiyim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/2 р (1).jpg","sourceFiles":["rubashkalar/2 р (1).jpg"]},{"id":40007,"name":"Juft qushlar naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/7337d07cf467-card.webp","gallery":["img/7337d07cf467.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Juft qushlar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":-1,"code":"NQ-2026-008","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli kiyim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/2 р.jpg","sourceFiles":["rubashkalar/2 р.jpg"]},{"id":40008,"name":"Uchayotgan qushlar naqshi","dept":"Ayollar","type":"Rubashkalar","price":500000,"image":"img/d1af2328e277-card.webp","gallery":["img/d1af2328e277.webp"],"sizes":[],"colors":[],"colorNames":[],"style":"","pattern":"Uchayotgan qushlar naqshi","patternId":null,"placement":"","status":"Tafsilotlar so‘rov asosida","tags":["new"],"bestseller":false,"newDays":-1,"code":"NQ-2026-009","fabric":"Aniqlashtiriladi","embSize":"Aniqlashtiriladi","desc":"Naqshli kiyim. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.","sourceFile":"rubashkalar/3 р.jpg","sourceFiles":["rubashkalar/3 р.jpg"]}];
+const state={view:'home',dept:'Barchasi',expandedDept:null,types:new Set(),sizes:new Set(),styles:new Set(),patterns:new Set(),placements:new Set(),statuses:new Set(),color:null,minPrice:null,maxPrice:null,tag:'all',query:'',sort:'featured',favorites:new Set(JSON.parse(localStorage.getItem('naqshin-catalog-v19-favorites')||'[]')),activeProduct:null,selectedSize:null,selectedColor:null};
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];const fmt=n=>n==null?'Narx so‘rov asosida':new Intl.NumberFormat('uz-UZ').format(n)+' so‘m';
+function productCard(p){return `<article class="product-card" data-id="${p.id}"><div class="product-media"><img loading="lazy" src="${p.image}" alt="${p.name} — ${p.pattern}"><span class="status-pill">${p.status}</span><button class="heart-btn ${state.favorites.has(p.id)?'active':''}" data-fav="${p.id}">${state.favorites.has(p.id)?'♥':'♡'}</button><button class="quick-btn" data-open="${p.id}">Batafsil ko‘rish</button></div><div class="product-info"><div class="product-title-row"><div><h3>${p.name}</h3><span class="product-kind">${p.dept} · ${p.type}</span></div><div class="swatches">${p.colors.map(c=>`<i style="background:${c}"></i>`).join('')}</div></div><p class="product-price">${fmt(p.price)}</p></div></article>`}
+function setupHome(){
+  const catImgs=[IMAGES[21],IMAGES[23],IMAGES[25],IMAGES[17]];
+  const homeCategories=$('#homeCategories');
+  if(homeCategories){
+    homeCategories.innerHTML=['Ayollar','Erkaklar'].map((d,i)=>`<button class="cat-card" data-home-dept="${d}" style="border:0;padding:0;text-align:left"><img loading="lazy" decoding="async" src="${catImgs[i]}" alt="${d}"><div class="cat-card-copy"><h3>${d}</h3><p>${d.includes('bolalar')?'2–14 yosh':'Kolleksiyani ko‘rish'}</p>${d.includes('bolalar')?'<span class="soon">TEZ KUNDA / STRUKTURA TAYYOR</span>':''}</div></button>`).join('');
+  }
+  const homeProducts=$('#homeProducts');
+  if(homeProducts) homeProducts.innerHTML=products.slice(0,8).map(productCard).join('');
+  const homePatterns=$('#homePatterns');
+  if(homePatterns) homePatterns.innerHTML=patternData.slice(0,4).map(patternCard).join('');
+  const beforeAfter=$('#beforeAfter');
+  if(beforeAfter) beforeAfter.innerHTML=Array.from({length:6},(_,i)=>`<div class="before-after"><img loading="lazy" decoding="async" src="${IMAGES[(i+3)%9]}" alt="Oldin"><img loading="lazy" decoding="async" src="${IMAGES[i%9]}" alt="Keyin"></div>`).join('');
+  const corpPortfolio=$('#corpPortfolio');
+  if(corpPortfolio) corpPortfolio.innerHTML=IMAGES.slice(0,8).map((x,i)=>`<img loading="lazy" src="${x}" alt="Korporativ ish ${i+1}" style="width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:12px">`).join('');
+}
+function patternCard(p){const count=products.filter(x=>x.patternId===p.id).length;return `<button class="pattern-card" data-pattern="${p.id}"><div class="pattern-img"><img loading="lazy" src="${p.image}" alt="${p.name}"></div><h3>${p.name}</h3><p>${p.origin} · ${count} ta mahsulot</p></button>`}
+function setupPatterns(){$('#patternStyleNav').innerHTML=['Barchasi',...styles].map((s,i)=>`<button data-pattern-style="${s}" class="${i===0?'accent':''}">${s}</button>`).join('');renderPatternLibrary('Barchasi');}
+function renderPatternLibrary(style){const list=patternData.filter(p=>style==='Barchasi'||p.style===style);$('#patternLibrary').innerHTML=list.map(patternCard).join('');$('#patternDetail').classList.add('hidden');}
+function openPattern(id){const p=patternData.find(x=>x.id===id);if(!p)return;$('#patternLibrary').classList.add('hidden');const linked=products.filter(x=>x.patternId===id).slice(0,4);$('#patternDetail').innerHTML=`<button class="text-link" id="backPatterns">← Naqshlar ro‘yxati</button><div class="service-layout"><img loading="lazy" decoding="async" src="${p.image}" alt="${p.name}" style="width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:18px"><div><p class="eyebrow">${p.origin} / ${p.style}</p><h2 style="font-size:48px;margin:0 0 15px">${p.name}</h2><p class="lead">${p.meaning}</p><div class="detail-lines"><div class="detail-line"><span>Kelib chiqishi</span><b>${p.origin}</b></div><div class="detail-line"><span>Ranglar soni</span><b>${p.colors}</b></div><div class="detail-line"><span>Taxminiy stitch</span><b>${p.stitches}</b></div><div class="detail-line"><span>Joylashuv</span><b>${p.placement}</b></div></div><button class="primary" data-pattern-service="${p.id}">Shu naqshni o‘z kiyimingizga tiktiring</button></div></div><div class="section-head"><h2>Shu naqshdagi mahsulotlar</h2></div><div class="home-products">${linked.map(productCard).join('')}</div>`;$('#patternDetail').classList.remove('hidden');$('#backPatterns').onclick=()=>{$('#patternDetail').classList.add('hidden');$('#patternLibrary').classList.remove('hidden')};}
+function setupCatalog(){renderDeptFilters();renderTypeFilters();$('#sizeFilters').innerHTML=sizes.map(s=>`<button class="chip" data-size="${s}">${s}</button>`).join('');$('#styleFilters').innerHTML=styles.map(s=>check(s,'style')).join('');$('#patternFilters').innerHTML=patternData.map(p=>check(p.name,'pattern')).join('');$('#placementFilters').innerHTML=placements.map(s=>check(s,'placement')).join('');$('#statusFilters').innerHTML=statuses.map(s=>check(s,'status')).join('');$('#colorFilters').innerHTML=colorPalette.map(c=>`<button class="color-dot" data-color="${c.key}" title="${c.key}" style="background:${c.hex}"></button>`).join('');}
+function check(label,type){return `<label class="check-item"><input type="checkbox" data-${type}="${label}"><span>${label}</span></label>`}
+function renderDeptFilters(){const counts=d=>d==='Barchasi'?products.length:products.filter(p=>p.dept===d).length;$('#deptFilters').innerHTML=depts.map(d=>{if(d==='Barchasi')return `<div class="dept-group"><button class="category-btn ${state.dept===d?'active':''}" data-dept="${d}"><span class="dept-label"><span>${d}</span><small>${counts(d)} mahsulot</small></span><span></span></button></div>`;const open=state.expandedDept===d;const subtypes=typesByDept[d]||[];return `<div class="dept-group ${open?'open':''}"><button class="category-btn ${state.dept===d?'active':''}" data-dept="${d}" aria-expanded="${open}"><span class="dept-label"><span>${d}</span><small>${counts(d)} mahsulot</small></span><span class="dept-chevron">${open?'−':'+'}</span></button><div class="dept-subtypes ${open?'open':''}"><div class="dept-subtypes-inner">${subtypes.map(t=>{const c=products.filter(p=>p.dept===d&&p.type===t).length;return `<button class="dept-subtype ${state.types.has(t)?'active':''}" data-subtype="${t}" data-parent-dept="${d}"><span>${t}</span><small>${c}</small></button>`}).join('')}</div></div></div>`}).join('')}
+function renderTypeFilters(){let arr=state.dept==='Barchasi'?[...new Set(Object.values(typesByDept).flat())]:typesByDept[state.dept];$('#typeFilters').innerHTML=arr.map(t=>check(t,'type')).join('');}
+function filtered(){let list=products.filter(p=>state.dept==='Barchasi'||p.dept===state.dept).filter(p=>!state.types.size||state.types.has(p.type)).filter(p=>!state.sizes.size||[...state.sizes].some(s=>p.sizes.includes(s))).filter(p=>!state.styles.size||state.styles.has(p.style)).filter(p=>!state.patterns.size||state.patterns.has(p.pattern)).filter(p=>!state.placements.size||state.placements.has(p.placement)).filter(p=>!state.statuses.size||state.statuses.has(p.status)).filter(p=>!state.color||p.colorNames.includes(state.color)).filter(p=>state.minPrice==null||(p.price!=null&&p.price>=state.minPrice)).filter(p=>state.maxPrice==null||(p.price!=null&&p.price<=state.maxPrice)).filter(p=>state.tag==='all'||p.tags.includes(state.tag)).filter(p=>!state.query||(`${p.name} ${p.dept} ${p.type} ${p.pattern} ${p.style} ${p.code} ${window.naqshinTranslate? [p.name,p.dept,p.type,p.pattern,p.style].map(window.naqshinTranslate).join(' '):''}`).toLowerCase().includes(state.query.toLowerCase()));if(state.sort==='new')list.sort((a,b)=>a.newDays-b.newDays);if(state.sort==='price-asc')list.sort((a,b)=>a.price-b.price);if(state.sort==='price-desc')list.sort((a,b)=>b.price-a.price);if(state.sort==='best')list.sort((a,b)=>Number(b.bestseller)-Number(a.bestseller));return list;}
+function renderCatalog(){const list=filtered();$('#resultCount').textContent=`${list.length} ta mahsulot`;$('#productGrid').innerHTML=list.map(productCard).join('');$('#emptyState').classList.toggle('hidden',!!list.length);$('#productGrid').classList.toggle('hidden',!list.length);renderSelectedFilters();updateURL();updateFavorites();}
+function renderSelectedFilters(){const a=[];if(state.dept!=='Barchasi')a.push(['dept',state.dept]);state.types.forEach(x=>a.push(['type',x]));state.sizes.forEach(x=>a.push(['size',x]));state.styles.forEach(x=>a.push(['style',x]));state.patterns.forEach(x=>a.push(['pattern',x]));state.placements.forEach(x=>a.push(['placement',x]));state.statuses.forEach(x=>a.push(['status',x]));if(state.color)a.push(['color',state.color]);if(state.minPrice!=null)a.push(['min',`≥ ${fmt(state.minPrice)}`]);if(state.maxPrice!=null)a.push(['max',`≤ ${fmt(state.maxPrice)}`]);$('#selectedFilters').innerHTML=a.map(([k,v])=>`<button class="filter-tag" data-clear="${k}" data-value="${String(v).replace(/"/g,'&quot;')}">${v} ×</button>`).join('');}
+function updateURL(){if(state.view!=='catalog')return;const q=new URLSearchParams();if(state.dept!=='Barchasi')q.set('bolim',state.dept);if(state.types.size)q.set('tur',[...state.types].join(','));if(state.sizes.size)q.set('olcham',[...state.sizes].join(','));if(state.styles.size)q.set('uslub',[...state.styles].join(','));if(state.patterns.size)q.set('naqsh',[...state.patterns].join(','));if(state.color)q.set('rang',state.color);if(state.tag!=='all')q.set('teg',state.tag);history.replaceState(null,'',location.pathname+(q.toString()?'?'+q:'')+'#catalog');}
+function resetFilters(){state.dept='Barchasi';state.expandedDept=null;state.types.clear();state.sizes.clear();state.styles.clear();state.patterns.clear();state.placements.clear();state.statuses.clear();state.color=null;state.minPrice=null;state.maxPrice=null;state.tag='all';state.query='';$('#globalSearch').value='';$('#minPrice').value='';$('#maxPrice').value='';setupCatalog();renderCatalog();$$('.collection-tab').forEach(x=>x.classList.toggle('active',x.dataset.tag==='all'));}
+function saveFavs(){localStorage.setItem('naqshin-catalog-v19-favorites',JSON.stringify([...state.favorites]))}function toggleFavorite(id){state.favorites.has(id)?state.favorites.delete(id):state.favorites.add(id);saveFavs();renderCatalog();setupHome();if(state.activeProduct?.id===id)updateModalFavorite();}
+function updateFavorites(){if(!$('#favoritesCount'))return;$('#favoritesCount').textContent=state.favorites.size;const fav=products.filter(p=>state.favorites.has(p.id));$('#favoritesList').innerHTML=fav.length?fav.map(p=>`<div class="favorite-item"><img loading="lazy" decoding="async" src="${p.image}" alt="${p.name}"><div><h4>${p.name}</h4><p>${p.dept} · ${fmt(p.price)}</p><p>${p.code}</p></div><button data-remove-fav="${p.id}">×</button></div>`).join(''):'<p class="muted">Hozircha sevimlilar yo‘q.</p>';}
+function openProduct(id){const p=products.find(x=>x.id===id);if(!p)return;state.activeProduct=p;state.selectedSize=p.sizes[0]||'Aniqlashtiriladi';state.selectedColor=p.colors[0]||'Rasmdagidek';$('#modalThumbs').innerHTML=p.gallery.map((g,i)=>`<button class="thumb ${i===0?'active':''}" data-gallery="${i}"><img loading="lazy" decoding="async" src="${g}" alt="${p.name} foto ${i+1}"></button>`).join('');$('#modalImage').src=p.gallery[0];$('#modalCategory').textContent=`${p.dept} / ${p.type} / ${p.style}`;$('#modalStatus').textContent=p.status;$('#modalTitle').textContent=p.name;$('#modalPrice').textContent=fmt(p.price);$('#modalDescription').textContent=p.desc;$('#modalPatternLink').hidden=!p.patternId;$('#modalPatternLink').textContent=`Bu naqsh haqida: ${p.pattern} →`;$('#modalFabric').textContent=p.fabric;$('#modalEmbSize').textContent=p.embSize;$('#modalColors').innerHTML=p.colors.length?p.colors.map((c,i)=>`<button class="modal-color ${i===0?'active':''}" data-modal-color="${c}" style="background:${c}"></button>`).join(''):'<span class="muted">Rasmdagidek</span>';$('#modalSizes').innerHTML=p.sizes.length?p.sizes.map((s,i)=>`<button class="modal-size ${i===0?'active':''}" data-modal-size="${s}">${s}</button>`).join(''):'<span class="muted">So‘rov orqali aniqlashtiriladi</span>';const sim=products.filter(x=>x.id!==p.id&&(x.patternId===p.patternId||x.dept===p.dept)).slice(0,4);$('#similarProducts').innerHTML=sim.map(x=>`<button class="similar-item" data-open="${x.id}" style="border:0;background:none;text-align:left;padding:0"><img loading="lazy" decoding="async" src="${x.image}" alt="${x.name}"><span>${x.name}</span></button>`).join('');updateModalFavorite();$('#productModal').classList.remove('hidden');document.body.style.overflow='hidden';}
+function closeProduct(){$('#productModal').classList.add('hidden');$('#zoomBox').classList.remove('zoom');document.body.style.overflow=''}function updateModalFavorite(){const a=state.activeProduct&&state.favorites.has(state.activeProduct.id);$('#modalFavorite').textContent=a?'♥':'♡';$('#modalFavorite').style.color=a?'var(--accent)':''}
+function openOrder(){const p=state.activeProduct;if(!p)return;closeProduct();$('#orderProduct').value=p.name+' · '+p.code;$('#orderSize').innerHTML=(p.sizes.length?p.sizes:['Aniqlashtiriladi']).map(s=>`<option ${s===state.selectedSize?'selected':''}>${s}</option>`).join('');$('#orderSummary').innerHTML=`<b>${p.name}</b><br>${p.code} · ${fmt(p.price)} · ${p.status}`;$('#orderForm').classList.remove('hidden');$('#orderSuccess').classList.add('hidden');$('#orderModal').classList.remove('hidden');}
+function switchView(view){state.view=view;$$('.view').forEach(v=>v.classList.remove('active'));const target=$(`#${view}View`);if(target)target.classList.add('active');$$('.nav-link').forEach(n=>n.classList.toggle('active',n.dataset.view===view));window.scrollTo({top:0,behavior:'smooth'});if(view==='catalog'){renderCatalog();history.replaceState(null,'',location.pathname+location.search+'#catalog')}else history.replaceState(null,'',location.pathname+'#'+view)}
+function showTelegram(product){const text=product?`Assalomu alaykum, saytdan yozyapman. Meni ${product.name} (${product.code}) qiziqtiryapti`:'Assalomu alaykum, saytdan yozyapman.';window.open('https://t.me/naqshin_aloqa?text='+encodeURIComponent(text),'_blank','noopener,noreferrer')}
+function setupProcess(){const steps=[['Dizayn','Dizayner naqsh eskizini Adobe Illustrator’da ishlaydi yoki mavjud naqsh tanlanadi.'],['Digitizing','Naqsh tikuv mashinasi o‘qiydigan dasturga aylantiriladi; ignaning har bir harakati belgilanadi.'],['Sinov tikuv','Naqsh avval sinov matoga tikiladi va tekshiriladi.'],['Asosiy tikuv','FEIYA 12 ignali mashinada kiyimga tikiladi.'],['Sifat nazorati va tozalash','Ipni tozalash, dazmollash va yakuniy ko‘rik.'],['Topshirish','Do‘kondan olish yoki yetkazib berish.']];$('#processList').innerHTML=steps.map((x,i)=>`<article class="process-row"><b>${String(i+1).padStart(2,'0')}</b><div><h3>${x[0]}</h3><p>${x[1]}</p></div><img loading="lazy" decoding="async" src="${IMAGES[(i+2)%9]}" alt="${x[0]}"></article>`).join('')}
+const faq=[['Qancha vaqtda tayyor bo‘ladi?','Muddat naqsh murakkabligi va ustaxona yuklamasiga bog‘liq. Ustaxona quvvati o‘rtacha kuniga 3 ta kiyim.'],['O‘z kiyimimni olib kelsam bo‘ladimi?','Ha. Mato va kiyim holati tekshirilgach, mos naqsh va joylashuv tavsiya qilinadi.'],['Naqsh rangini o‘zgartirish mumkinmi?','Ha, 50 dan ortiq ip rangidan mos kombinatsiya tanlash mumkin.'],['Qaysi matoga tikib bo‘lmaydi?','Juda yupqa trikotaj, teri, eski yoki yirtiq kiyimlar tavsiya etilmaydi.'],['Korporativ buyurtma olasizmi?','Ha. Logotip tikuvi, forma va korporativ sovg‘alar uchun alohida ariza mavjud.'],['O‘lcham bo‘lmasa nima qilaman?','Mahsulot “buyurtma asosida” bo‘lsa, sotuvchi bilan muddat va imkoniyat aniqlashtiriladi.'],['Yetkazib berish bormi?','Yetkazib berish shartlari va narxlari buyurtmachi tomonidan yakuniy bosqichda to‘ldiriladi.'],['Naqsh ma’nosini qayerdan bilaman?','Naqsh kutubxonasida har bir naqshning kelib chiqishi, ma’nosi va texnik ma’lumoti bor.'],['Sevimlilar saqlanadimi?','Ha. Tanlangan mahsulotlar ushbu brauzer xotirasida saqlanadi.'],['Onlayn to‘lov bormi?','Birinchi versiyada yo‘q. Buyurtma ariza orqali qabul qilinadi; Payme va Click 2-bosqich uchun rejalashtirilgan.']];
+function setupFaq(el,items=faq){$(el).innerHTML=items.map((x,i)=>`<div class="faq-item"><button class="faq-q"><span>${x[0]}</span><span>+</span></button><div class="faq-a hidden">${x[1]}</div></div>`).join('')}
+function phoneMask(input){let v=input.value.replace(/\D/g,'').replace(/^998/,'').slice(0,9);let out='+998 ';if(v.length)out+='('+v.slice(0,2);if(v.length>=2)out+=') '+v.slice(2,5);if(v.length>=5)out+='-'+v.slice(5,7);if(v.length>=7)out+='-'+v.slice(7,9);input.value=out}
+function fakeForm(formId,successId){$(formId).addEventListener('submit',e=>{e.preventDefault();const fd=new FormData(e.currentTarget);if(fd.get('website'))return;const arr=JSON.parse(localStorage.getItem('naqshin-demo-requests')||'[]');arr.push({form:formId,date:new Date().toISOString(),data:Object.fromEntries([...fd].filter(([k,v])=>typeof v==='string'))});localStorage.setItem('naqshin-demo-requests',JSON.stringify(arr));e.currentTarget.classList.add('hidden');$(successId).classList.remove('hidden')})}
+setupHome();setupPatterns();setupCatalog();setupProcess();setupFaq('#mainFaq');setupFaq('#serviceFaq',faq.slice(0,5));updateFavorites();setTimeout(renderCatalog,260);
+document.addEventListener('click',e=>{const v=e.target.closest('[data-view]');if(v){switchView(v.dataset.view);return}const hd=e.target.closest('[data-home-dept]');if(hd){resetFilters();state.dept=hd.dataset.homeDept;state.expandedDept=state.dept;renderDeptFilters();renderTypeFilters();switchView('catalog');renderCatalog();return}const dl=e.target.closest('[data-dept-link]');if(dl){resetFilters();state.dept=dl.dataset.deptLink;state.expandedDept=state.dept;renderDeptFilters();renderTypeFilters();switchView('catalog');renderCatalog();return}const fav=e.target.closest('[data-fav]');if(fav){e.stopPropagation();toggleFavorite(+fav.dataset.fav);return}const op=e.target.closest('[data-open]')||e.target.closest('.product-card');if(op&&op.dataset.id||op?.dataset.open){openProduct(+(op.dataset.open||op.dataset.id));return}const pc=e.target.closest('[data-pattern]');if(pc){openPattern(pc.dataset.pattern);return}const tg=e.target.closest('[data-telegram]');if(tg){showTelegram();return}const ps=e.target.closest('[data-pattern-service]');if(ps){switchView('service');return}const close=e.target.closest('[data-close-sheet]');if(close){$('#'+close.dataset.closeSheet).classList.add('hidden');return}const fq=e.target.closest('.faq-q');if(fq){fq.nextElementSibling.classList.toggle('hidden');fq.lastElementChild.textContent=fq.nextElementSibling.classList.contains('hidden')?'+':'−';}});
+$('#deptFilters').addEventListener('click',e=>{const sub=e.target.closest('[data-subtype]');if(sub){const dept=sub.dataset.parentDept,type=sub.dataset.subtype;state.dept=dept;state.expandedDept=dept;if(state.types.has(type)){state.types.delete(type)}else{state.types.clear();state.types.add(type)}renderDeptFilters();renderTypeFilters();renderCatalog();return}const b=e.target.closest('[data-dept]');if(!b)return;const dept=b.dataset.dept;if(dept==='Barchasi'){state.dept='Barchasi';state.expandedDept=null;state.types.clear()}else if(state.dept===dept){state.expandedDept=state.expandedDept===dept?null:dept}else{state.dept=dept;state.expandedDept=dept;state.types.clear()}renderDeptFilters();renderTypeFilters();renderCatalog()});
+$('#typeFilters').addEventListener('change',e=>{const i=e.target;if(!i.dataset.type)return;i.checked?state.types.add(i.dataset.type):state.types.delete(i.dataset.type);renderCatalog()});
+$('#sizeFilters').addEventListener('click',e=>{const b=e.target.closest('[data-size]');if(!b)return;state.sizes.has(b.dataset.size)?state.sizes.delete(b.dataset.size):state.sizes.add(b.dataset.size);b.classList.toggle('active');renderCatalog()});
+function bindCheck(container,key,set){$(container).addEventListener('change',e=>{const i=e.target;const val=i.dataset[key];if(!val)return;i.checked?set.add(val):set.delete(val);renderCatalog()})}bindCheck('#styleFilters','style',state.styles);bindCheck('#patternFilters','pattern',state.patterns);bindCheck('#placementFilters','placement',state.placements);bindCheck('#statusFilters','status',state.statuses);
+$('#colorFilters').addEventListener('click',e=>{const b=e.target.closest('[data-color]');if(!b)return;state.color=state.color===b.dataset.color?null:b.dataset.color;$$('.color-dot').forEach(x=>x.classList.toggle('active',x.dataset.color===state.color));renderCatalog()});
+$('#minPrice').oninput=e=>{state.minPrice=e.target.value?+e.target.value:null;renderCatalog()};$('#maxPrice').oninput=e=>{state.maxPrice=e.target.value?+e.target.value:null;renderCatalog()};$('#sortSelect').onchange=e=>{state.sort=e.target.value;renderCatalog()};$$('.collection-tab').forEach(b=>b.onclick=()=>{state.tag=b.dataset.tag;$$('.collection-tab').forEach(x=>x.classList.toggle('active',x===b));renderCatalog()});$('#resetFilters').onclick=resetFilters;$('#emptyReset').onclick=resetFilters;
+$('#selectedFilters').onclick=e=>{const b=e.target.closest('[data-clear]');if(!b)return;const k=b.dataset.clear,v=b.dataset.value;if(k==='dept'){state.dept='Barchasi';state.expandedDept=null;}if(k==='type')state.types.delete(v);if(k==='size')state.sizes.delete(v);if(k==='style')state.styles.delete(v);if(k==='pattern')state.patterns.delete(v);if(k==='placement')state.placements.delete(v);if(k==='status')state.statuses.delete(v);if(k==='color')state.color=null;if(k==='min')state.minPrice=null;if(k==='max')state.maxPrice=null;setupCatalog();renderCatalog()};
+$('#globalSearch').addEventListener('input',e=>{state.query=e.target.value;if(state.query&&!$('#catalogView').classList.contains('active'))switchView('catalog');renderCatalog()});$('#homeBtn').onclick=()=>switchView('home');$('#fullscreenBtn').onclick=()=>{if(!document.fullscreenElement)document.documentElement.requestFullscreen?.();else document.exitFullscreen?.()};
+$('#patternStyleNav').onclick=e=>{const b=e.target.closest('[data-pattern-style]');if(!b)return;$$('[data-pattern-style]').forEach(x=>x.classList.toggle('accent',x===b));renderPatternLibrary(b.dataset.patternStyle)};
+$('#closeProduct').onclick=closeProduct;$('#productModal').onclick=e=>{if(e.target.id==='productModal')closeProduct()};$('#modalFavorite').onclick=()=>state.activeProduct&&toggleFavorite(state.activeProduct.id);$('#modalThumbs').onclick=e=>{const b=e.target.closest('[data-gallery]');if(!b)return;$('#modalImage').src=state.activeProduct.gallery[+b.dataset.gallery];$$('.thumb').forEach(x=>x.classList.toggle('active',x===b))};$('#zoomBox').onclick=()=>$('#zoomBox').classList.toggle('zoom');$('#modalSizes').onclick=e=>{const b=e.target.closest('[data-modal-size]');if(!b)return;state.selectedSize=b.dataset.modalSize;$$('.modal-size').forEach(x=>x.classList.toggle('active',x===b))};$('#modalColors').onclick=e=>{const b=e.target.closest('[data-modal-color]');if(!b)return;state.selectedColor=b.dataset.modalColor;$$('.modal-color').forEach(x=>x.classList.toggle('active',x===b))};$('#modalPatternLink').onclick=()=>{const id=state.activeProduct.patternId;closeProduct();switchView('patterns');openPattern(id)};$('#sizeGuideBtn').onclick=()=>$('#sizeModal').classList.remove('hidden');$('#orderBtn').onclick=openOrder;$('#productTelegram').onclick=()=>showTelegram(state.activeProduct);$('#similarProducts').onclick=e=>{const b=e.target.closest('[data-open]');if(b)openProduct(+b.dataset.open)};
+$('#favoritesBtn').onclick=()=>{$('#favoritesDrawer').classList.add('open');$('#drawerScrim').classList.remove('hidden');updateFavorites()};$('#closeFavorites').onclick=()=>{$('#favoritesDrawer').classList.remove('open');$('#drawerScrim').classList.add('hidden')};$('#drawerScrim').onclick=$('#closeFavorites').onclick;$('#favoritesList').onclick=e=>{const b=e.target.closest('[data-remove-fav]');if(b)toggleFavorite(+b.dataset.removeFav)};$('#favToCatalog').onclick=()=>{$('#closeFavorites').click();switchView('catalog')};
+function openDesignOrder(){const modal=$('#designOrderModal');$('#designOrderForm').classList.remove('hidden');$('#designOrderSuccess').classList.add('hidden');modal.classList.remove('hidden');}
+document.addEventListener('click',e=>{const b=e.target.closest('[data-design-order]');if(b){e.preventDefault();openDesignOrder();}});
+$('#designFile').addEventListener('change',e=>{const file=e.target.files?.[0];const meta=$('#designFileMeta'),preview=$('#designPreview');preview.innerHTML='<span>Preview</span>';if(!file){meta.textContent='Fayl tanlanmagan';return}meta.textContent=`${file.name} · ${(file.size/1024/1024).toFixed(2)} MB`;if(file.type.startsWith('image/')){const img=document.createElement('img');img.alt='Yuklangan dizayn preview';img.src=URL.createObjectURL(file);preview.innerHTML='';preview.appendChild(img)}else{preview.innerHTML='<span>PDF fayl tanlandi</span>'}});
+$('#designOrderForm').addEventListener('submit',e=>{e.preventDefault();const fd=new FormData(e.currentTarget);if(fd.get('website'))return;const file=$('#designFile').files?.[0];const requests=JSON.parse(localStorage.getItem('naqshin-custom-design-requests')||'[]');const data={};for(const [k,v] of fd.entries()){if(typeof v==='string')data[k]=v;}requests.push({date:new Date().toISOString(),designFile:file?{name:file.name,type:file.type,size:file.size}:null,data});localStorage.setItem('naqshin-custom-design-requests',JSON.stringify(requests));e.currentTarget.classList.add('hidden');$('#designOrderSuccess').classList.remove('hidden')});
+$('#orderForm').addEventListener('submit',e=>{e.preventDefault();const fd=new FormData(e.currentTarget);if(fd.get('website'))return;const orders=JSON.parse(localStorage.getItem('naqshin-demo-orders')||'[]');orders.push({date:new Date().toISOString(),product:state.activeProduct?.code,data:Object.fromEntries(fd)});localStorage.setItem('naqshin-demo-orders',JSON.stringify(orders));e.currentTarget.classList.add('hidden');$('#orderSuccess').classList.remove('hidden')});fakeForm('#serviceForm','#serviceSuccess');fakeForm('#corpForm','#corpSuccess');fakeForm('#contactForm','#contactSuccess');document.addEventListener('input',e=>{if(e.target.matches('[data-phone]'))phoneMask(e.target)});
+let idleTimer;function resetIdle(){clearTimeout(idleTimer);$('#idleScreen').classList.add('hidden');idleTimer=setTimeout(()=>$('#idleScreen').classList.remove('hidden'),120000)};['pointerdown','touchstart','keydown','wheel'].forEach(ev=>document.addEventListener(ev,resetIdle,{passive:true}));$('#idleScreen').onclick=resetIdle;resetIdle();
+const hash=location.hash.replace('#','');if(['catalog','patterns','service','corporate','about','process','contact','faq','delivery'].includes(hash))switchView(hash);
+</script>
+<div aria-hidden="true" class="ornament-flow-modal" id="ornamentFlowModal">
+<div class="ornament-flow-shell">
+<header class="ornament-flow-header">
+<div class="ornament-flow-brand">
+<span class="eyebrow">NAQSH LAB</span>
+<strong>Naqshni kiyimda ko‘rish</strong>
+</div>
+<button aria-label="Yopish" class="ornament-modal-close" id="ornamentModalClose">×</button>
+</header>
+<div class="ornament-flow-body">
+<aside class="ornament-selected-panel">
+<div class="ornament-selected-art">
+<img loading="lazy" decoding="async" alt="" id="modalOrnamentImage"/>
+</div>
+<div class="ornament-selected-copy">
+<span class="flow-step-label">TANLANGAN NAQSH</span>
+<h2 id="modalOrnamentName"></h2>
+<p id="modalOrnamentMeta"></p>
+<span class="source-mini-link source-mini-label" id="modalOrnamentSource">Naqshin naqsh kutubxonasi</span>
+</div>
+</aside>
+<main class="ornament-generator-panel">
+<section class="generator-step generator-step-active" id="garmentStep">
+<div class="generator-title">
+<span class="flow-step-label">01 · KIYIM TURINI TANLANG</span>
+<h2>Qaysi kiyimda ko‘rmoqchisiz?</h2>
+</div>
+<div class="generator-dept-tabs" id="generatorDeptTabs"></div>
+<div class="generator-garment-grid" id="generatorGarmentGrid"></div>
+<div class="generator-action-row">
+<div class="generator-selection-summary" id="generatorSelectionSummary">
+              Kiyim turi tanlanmagan
+            </div>
+<button class="primary-btn generator-create-btn" disabled="" id="generatorCreateBtn">
+              4 variant yaratish
+            </button>
+</div>
+</section>
+<section class="generator-step generator-results-step" hidden="" id="generatorResultsStep">
+<div class="generator-title-row">
+<div>
+<span class="flow-step-label">02 · AI MOCKUP</span>
+<h2>4 xil joylashuv varianti</h2>
+<p id="generatorStatusText">Variantlar yaratilmoqda...</p>
+</div>
+<button class="generator-text-btn" id="generatorChangeGarment">Kiyimni almashtirish</button>
+</div>
+<div class="generator-results-grid" id="generatorResultsGrid"></div>
+<div class="generator-results-footer">
+<p id="generatorTechNote">
+              Real generatsiya xavfsiz backend orqali OpenAI image generation API bilan ulanadi.
+            </p>
+<button class="secondary-btn" id="generatorRegenerateBtn">Qayta yaratish</button>
+</div>
+</section>
+</main>
+</div>
+</div>
+</div>
+<script>
+/*
+ v10 ornament browser.
+ Ornament preview images below are loaded from the public TBC Ornaments catalogue.
+ Real AI generation must use a server-side endpoint; never put an OpenAI API key in this HTML.
+*/
+window.NAQSHIN_AI_ENDPOINT = window.NAQSHIN_AI_ENDPOINT || "";
+
+(function(){
+  const ornaments = [
+    {id:"ornament-nomi-yoqolgan-1",name:"Ornament nomi yo‘qolgan",region:"O‘zbekiston",type:"Ornament",image:"img/naqsh-459.webp"},
+    {id:"gulli-topbarggul-surxondaryo",name:"Gulli to‘pbarggul",region:"Surxondaryo",type:"Kashtachilik",image:"img/naqsh-493.webp"},
+    {id:"mehrob-gul-samarqand",name:"Mehrob-gul",region:"Samarqand",type:"Ornament",image:"img/naqsh-450.webp"},
+    {id:"sakkizqirrali-topbarggul",name:"Sakkizqirrali to‘pbarggul",region:"Qashdaryo",type:"Ornament",image:"img/naqsh-433.webp"},
+    {id:"topbarggul-qashdaryo-1",name:"To‘pbarggul",region:"Qashdaryo",type:"Ornament",image:"img/naqsh-409.webp"},
+    {id:"ornament-nomi-yoqolgan-qashdaryo",name:"Ornament nomi yo‘qolgan",region:"Qashdaryo",type:"Ornament",image:"img/naqsh-361.webp"},
+    {id:"islimiy-qashdaryo",name:"Islimiy",region:"Qashdaryo",type:"Naqsh",image:"img/naqsh-339.webp"},
+    {id:"oy-surxondaryo",name:"Oy",region:"Surxondaryo",type:"Ornament",image:"img/naqsh-319.webp"},
+
+    {id:"mehrobgul-surxondaryo",name:"Mehrobgul",region:"Surxondaryo",type:"Ornament",image:"img/naqsh-382.webp"},
+    {id:"gul-1",name:"Gul",region:"O‘zbekiston",type:"Naqsh",image:"img/naqsh-480.webp"},
+    {id:"topbarggul-2",name:"To‘pbarggul",region:"O‘zbekiston",type:"Ornament",image:"img/naqsh-479.webp"},
+    {id:"topbarggul-3",name:"To‘pbarggul",region:"O‘zbekiston",type:"Ornament",image:"img/naqsh-478.webp"},
+    {id:"chor-qalampir-qashdaryo",name:"Chor qalampir",region:"Qashdaryo",type:"Ornament",image:"img/naqsh-477.webp"},
+    {id:"gulsafsar-qashdaryo",name:"Gulsafsar",region:"Qashdaryo",type:"Naqsh",image:"img/naqsh-476.webp"},
+    {id:"qalampirgul-qashdaryo",name:"Qalampirgul",region:"Qashdaryo",type:"Naqsh",image:"img/naqsh-475.webp"},
+    {id:"gulli-topbarggul-samarqand",name:"Gulli to‘pbarggul",region:"Samarqand",type:"Kashtachilik",image:"img/naqsh-474.webp"},
+    {id:"qalampirgul-samarqand",name:"Qalampirgul",region:"Samarqand",type:"Naqsh",image:"img/naqsh-473.webp"},
+    {id:"topbarggul-qashdaryo-4",name:"To‘pbarggul",region:"Qashdaryo",type:"Ornament",image:"img/naqsh-472.webp"},
+    {id:"topbarggul-qashdaryo-5",name:"To‘pbarggul",region:"Qashdaryo",type:"Ornament",image:"img/naqsh-471.webp"},
+    {id:"topbarggul-qashdaryo-6",name:"To‘pbarggul",region:"Qashdaryo",type:"Ornament",image:"img/naqsh-470.webp"}
+  ];
+
+  const state = {
+    ornament:null,
+    department:"Ayollar",
+    garmentType:null,
+    generating:false
+  };
+
+  const $ = id => document.getElementById(id);
+
+  function init(){
+    const grid = $("ornamentGrid");
+    if(!grid) return;
+
+    let showAllOrnaments = false;
+
+    function renderOrnamentGrid(){
+      const visible = showAllOrnaments ? ornaments : ornaments.slice(0,8);
+      grid.innerHTML = visible.map(o => `
+        <button class="ornament-card" data-ornament-id="${o.id}" type="button">
+          <div class="ornament-card-visual">
+            <img loading="lazy" src="${o.image}" alt="${o.name}">
+            <span class="ornament-card-hover">Kiyimda ko‘rish →</span>
+          </div>
+          <div class="ornament-card-copy">
+            <h3>${o.name}</h3>
+            <p>${o.region} · ${o.type}</p>
+          </div>
+        </button>
+      `).join("");
+
+      grid.querySelectorAll("[data-ornament-id]").forEach(btn=>{
+        btn.addEventListener("click",()=>openModal(btn.dataset.ornamentId));
+      });
+
+      const allBtn = $("showAllOrnamentsBtn");
+      if(allBtn){
+        allBtn.textContent = showAllOrnaments ? "Yopish ↑" : "Barchasini ko‘rish →";
+      }
+      const countEl = $("ornamentCatalogCount");
+      if(countEl){ countEl.textContent = showAllOrnaments ? `${ornaments.length} ta naqsh ko‘rsatilmoqda` : "8 ta naqsh ko‘rsatilmoqda"; }
+    }
+
+    renderOrnamentGrid();
+
+    const showAllBtn = $("showAllOrnamentsBtn");
+    if(showAllBtn){
+      showAllBtn.addEventListener("click",()=>{
+        showAllOrnaments = !showAllOrnaments;
+        renderOrnamentGrid();
+        if(!showAllOrnaments){
+          $("ornamentBrowserSection").scrollIntoView({behavior:"smooth", block:"start"});
+        }
+      });
+    }
+
+    $("ornamentModalClose").addEventListener("click",closeModal);
+    $("ornamentFlowModal").addEventListener("click",e=>{
+      if(e.target === $("ornamentFlowModal")) closeModal();
+    });
+    document.addEventListener("keydown",e=>{
+      if(e.key === "Escape" && $("ornamentFlowModal").classList.contains("open")) closeModal();
+    });
+
+    $("generatorCreateBtn").addEventListener("click",generate);
+    $("generatorRegenerateBtn").addEventListener("click",generate);
+    $("generatorChangeGarment").addEventListener("click",()=>{
+      $("generatorResultsStep").hidden = true;
+      $("garmentStep").hidden = false;
+    });
+  }
+
+  function openModal(id){
+    const item = ornaments.find(o=>o.id===id);
+    if(!item) return;
+    state.ornament = item;
+    state.garmentType = null;
+    state.department = "Ayollar";
+
+    $("modalOrnamentImage").src = item.image;
+    $("modalOrnamentImage").alt = item.name;
+    $("modalOrnamentName").textContent = item.name;
+    $("modalOrnamentMeta").textContent = `${item.region} · ${item.type}`;
+
+    $("generatorResultsStep").hidden = true;
+    $("garmentStep").hidden = false;
+
+    renderDepartments();
+    renderGarments();
+
+    $("ornamentFlowModal").classList.add("open");
+    $("ornamentFlowModal").setAttribute("aria-hidden","false");
+    document.body.classList.add("ornament-modal-lock");
+  }
+
+  function closeModal(){
+    $("ornamentFlowModal").classList.remove("open");
+    $("ornamentFlowModal").setAttribute("aria-hidden","true");
+    document.body.classList.remove("ornament-modal-lock");
+  }
+
+  function renderDepartments(){
+    const deps = ["Ayollar","Erkaklar"];
+    $("generatorDeptTabs").innerHTML = deps.map(d=>`
+      <button class="${state.department===d?"active":""}" data-dept="${d}">${d}</button>
+    `).join("");
+
+    $("generatorDeptTabs").querySelectorAll("[data-dept]").forEach(btn=>{
+      btn.onclick = ()=>{
+        state.department = btn.dataset.dept;
+        state.garmentType = null;
+        renderDepartments();
+        renderGarments();
+      };
+    });
+  }
+
+  function renderGarments(){
+    const list = (typeof typesByDept !== "undefined" && typesByDept[state.department]) || [];
+    $("generatorGarmentGrid").innerHTML = list.map(type=>`
+      <button class="generator-garment-btn ${state.garmentType===type?"selected":""}" data-garment="${type}">
+        ${type}
+      </button>
+    `).join("");
+
+    $("generatorGarmentGrid").querySelectorAll("[data-garment]").forEach(btn=>{
+      btn.onclick = ()=>{
+        state.garmentType = btn.dataset.garment;
+        renderGarments();
+      };
+    });
+
+    $("generatorSelectionSummary").textContent = state.garmentType
+      ? `${state.department} · ${state.garmentType}`
+      : "Kiyim turi tanlanmagan";
+    $("generatorCreateBtn").disabled = !state.garmentType;
+  }
+
+  function findBaseGarment(){
+    if(typeof products === "undefined") return "";
+    const exact = products.find(p=>p.dept===state.department && p.type===state.garmentType);
+    const deptFallback = products.find(p=>p.dept===state.department);
+    return (exact || deptFallback || products[0] || {}).image || "";
+  }
+
+  function showLoading(){
+    $("generatorResultsGrid").innerHTML = Array.from({length:4},(_,i)=>`
+      <div class="generator-result-card loading">
+        <span class="generator-result-badge">VARIANT ${String(i+1).padStart(2,"0")}</span>
+      </div>
+    `).join("");
+  }
+
+  function showImages(images){
+    $("generatorResultsGrid").innerHTML = images.slice(0,4).map((src,i)=>`
+      <div class="generator-result-card">
+        <img loading="lazy" decoding="async" src="${src}" alt="${state.ornament.name} · ${state.garmentType} · variant ${i+1}">
+        <span class="generator-result-badge">VARIANT ${String(i+1).padStart(2,"0")}</span>
+      </div>
+    `).join("");
+    $("generatorStatusText").textContent =
+      `${state.ornament.name} · ${state.department} · ${state.garmentType}`;
+  }
+
+  function showDemo(){
+    const base = findBaseGarment();
+    $("generatorResultsGrid").innerHTML = Array.from({length:4},(_,i)=>`
+      <div class="generator-result-card">
+        ${base ? `<img loading="lazy" decoding="async" src="${base}" alt="Demo mockup">` : ""}
+        <span class="generator-result-badge">VARIANT ${String(i+1).padStart(2,"0")}</span>
+      </div>
+    `).join("");
+    $("generatorStatusText").textContent = "Frontend tayyor. AI backend hali ulanmagan.";
+    $("generatorTechNote").innerHTML =
+      "<b>Keyingi bosqich:</b> tanlangan ornament rasmi va bazaviy kiyim rasmi backend orqali OpenAI image generation modeliga yuboriladi va 4 ta real mockup qaytariladi.";
+  }
+
+  async function generate(){
+    if(!state.ornament || !state.garmentType || state.generating) return;
+    state.generating = true;
+
+    $("garmentStep").hidden = true;
+    $("generatorResultsStep").hidden = false;
+    $("generatorStatusText").textContent = "4 ta variant yaratilmoqda...";
+    showLoading();
+
+    const endpoint = window.NAQSHIN_AI_ENDPOINT;
+    if(!endpoint){
+      setTimeout(()=>{
+        showDemo();
+        state.generating = false;
+      },800);
+      return;
+    }
+
+    try{
+      const payload = {
+        ornament:{
+          id:state.ornament.id,
+          name:state.ornament.name,
+          region:state.ornament.region,
+          image:state.ornament.image,
+          source:state.ornament.source
+        },
+        garment:{
+          department:state.department,
+          type:state.garmentType,
+          baseImage:findBaseGarment()
+        },
+        count:4
+      };
+
+      const res = await fetch(endpoint,{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify(payload)
+      });
+
+      if(!res.ok) throw new Error("Server javobi: "+res.status);
+      const data = await res.json();
+      if(!Array.isArray(data.images) || !data.images.length){
+        throw new Error("Server images massivini qaytarmadi.");
+      }
+
+      showImages(data.images);
+      $("generatorTechNote").textContent =
+        "AI natijasi tayyor. Keyinchalik har bir variantga “Buyurtma berish” funksiyasini ulash mumkin.";
+    }catch(err){
+      $("generatorResultsGrid").innerHTML =
+        `<div class="generator-error"><b>Generatsiya amalga oshmadi.</b><br>${String(err.message || err)}</div>`;
+      $("generatorStatusText").textContent = "Qayta urinib ko‘ring.";
+    }finally{
+      state.generating = false;
+    }
+  }
+
+  if(document.readyState==="loading"){
+    document.addEventListener("DOMContentLoaded",init);
+  }else{
+    init();
+  }
+})();
+</script><script>(function(){
+const dictionary={"Qush va shoxlar naqshi": "Узор «Птица и ветви»", "Qanotli qush naqshi": "Узор «Птица с раскрытыми крыльями»", "Bug‘u va geometrik bezak naqshi": "Узор «Олень и геометрический орнамент»", "Moviy gulli novdalar naqshi": "Узор «Голубые цветущие ветви»", "Pushti qushlar naqshi": "Узор «Розовые птицы»", "Juft qushlar naqshi": "Узор «Пара птиц»", "Uchayotgan qushlar naqshi": "Узор «Летящие птицы»","Ko‘k atirgul naqshi": "Узор «Синие розы»", "Gul va geometrik bezak naqshi": "Цветочно-геометрический узор", "Gulli geometrik naqsh": "Геометрический узор с цветами", "Gulli hoshiya naqshi": "Узор «Цветочная кайма»", "Islimiy guldasta naqshi": "Узор «Растительный букет»", "Majnuntol shoxlari naqshi": "Узор «Ветви ивы»", "Rangli gullar naqshi": "Узор «Разноцветные цветы»", "Qizil gullar va novdalar naqshi": "Узор «Красные цветы и ветви»", "Gulli novdalar naqshi": "Узор «Цветущие ветви»", "Gul va yurakchalar naqshi": "Узор «Цветок и сердечки»", "Yarim doirali geometrik naqsh": "Полукруглый геометрический узор", "Anor naqshi": "Узор «Гранат»", "Ko‘k va zarg‘aldoq gullar naqshi": "Узор «Синие и оранжевые цветы»", "Mayda geometrik naqsh": "Мелкий геометрический узор", "Qora geometrik naqsh": "Чёрный геометрический узор", "Gul, yulduz va yurakchalar naqshi": "Узор «Цветы, звёзды и сердечки»", "To‘pbarggul va novda naqshi": "Узор «Розетка и ветвь»", "Romb naqshi": "Узор «Ромбы»", "Dala gullari naqshi": "Узор «Полевые цветы»", "Moviy to‘pbarggul naqshi": "Узор «Голубые розетки»", "Geometrik hoshiya naqshi": "Узор «Геометрическая кайма»", "Gul va bargli novda naqshi": "Узор «Цветок и ветвь с листьями»", "Geometrik hoshiya va gullar naqshi": "Узор «Геометрическая кайма и цветы»", "Geometrik hoshiya va novda naqshi": "Узор «Геометрическая кайма и ветвь»", "Gulli chambarak va hoshiya naqshi": "Узор «Цветочный венок и кайма»", "Ingichka geometrik hoshiya naqshi": "Узор «Тонкая геометрическая кайма»", "Anorli novda naqshi": "Узор «Ветвь граната»", "Ikat uslubidagi geometrik naqsh": "Геометрический узор в стиле икат", "Ko‘k va zarg‘aldoq geometrik naqsh": "Сине-оранжевый геометрический узор", "Anorli novdalar naqshi": "Узор «Ветви граната»", "Yorilgan anor naqshi": "Узор «Раскрытый гранат»", "Qizil gulli novdalar naqshi": "Узор «Ветви с красными цветами»", "Bej gulli novdalar naqshi": "Узор «Бежевые цветущие ветви»", "Kulrang gulli novdalar naqshi": "Узор «Серые цветущие ветви»", "Pushti g‘unchali novda naqshi": "Узор «Ветвь с розовыми бутонами»", "Moviy gulli novda naqshi": "Узор «Ветвь с голубыми цветами»", "Bug‘u va archazor naqshi": "Узор «Олень и хвойный лес»", "Archazor manzarasi naqshi": "Узор «Хвойный лес»", "Qovoq va kuzgi barglar naqshi": "Узор «Тыква и осенние листья»","YANGI KOLLEKSIYA":"НОВАЯ КОЛЛЕКЦИЯ","Barchasi": "Все", "Yangi kolleksiya": "Новая коллекция", "Yangi qo‘shilganlar": "Новинки", "Sovg‘a g‘oyalari": "Идеи подарков", "Yagona nusxa": "Единственный экземпляр", "Chegirma": "Скидки", "Korporativ": "Корпоративное", "Ayollar": "Женщинам", "Erkaklar": "Мужчинам", "Qiz bolalar": "Девочкам", "O‘g‘il bolalar": "Мальчикам", "Ko‘ylaklar": "Платья", "Bluzkalar": "Блузки", "Rubashkalar": "Рубашки", "Futbolkalar va longsliv": "Футболки и лонгсливы", "Futbolkalar va polo": "Футболки и поло", "Futbolkalar": "Футболки", "Xudi va svitshotlar": "Худи и свитшоты", "Shimlar": "Брюки", "Yubkalar": "Юбки", "Pidjaklar va jaketlar": "Пиджаки и жакеты", "Pidjaklar": "Пиджаки", "Jiletlar": "Жилеты", "Ustki kiyim": "Верхняя одежда", "Kompletlar": "Комплекты", "Uy kiyimi": "Домашняя одежда", "Aksessuarlar": "Аксессуары", "Shim va leginglar": "Брюки и легинсы", "Maktab formasi": "Школьная форма", "Bayram liboslari": "Праздничные наряды", "Pidjak va kostyum": "Пиджаки и костюмы", "Katalog": "Каталог", "KATALOG": "КАТАЛОГ", "KATEGORIYALAR": "КАТЕГОРИИ", "KOLLEKSIYA": "КОЛЛЕКЦИЯ", "Kolleksiya": "Коллекция", "Filtr": "Фильтр", "Bo‘lim": "Раздел", "Kiyim turi": "Тип одежды", "O‘lcham": "Размер", "Rang": "Цвет", "Naqsh uslubi": "Стиль узора", "Naqsh nomi": "Название узора", "Naqsh joylashuvi": "Расположение узора", "Narx": "Цена", "Holati": "Наличие", "Filtrlarni tozalash": "Сбросить фильтры", "Naqshni tanlang.": "Выберите узор.", "Kiyimingizni toping.": "Найдите свою одежду.", "Ayollar va erkaklar kiyimlari. Naqsh, o‘lcham, rang va holat bo‘yicha filtrlang.": "Женская и мужская одежда. Подбирайте по узору, размеру, цвету и наличию.", "Tavsiya etilgan": "Рекомендуемые", "Narx: arzondan": "Цена: по возрастанию", "Narx: qimmatdan": "Цена: по убыванию", "Ko‘p sotilgan": "Популярные", "Bunday mahsulot topilmadi": "Товары не найдены", "Filtrlarni o‘zgartiring. Quyida eng yaqin variantlarni ko‘rsatish uchun filtrlarni tozalashingiz mumkin.": "Измените параметры поиска или сбросьте фильтры, чтобы увидеть все товары.", "Barcha mahsulotlar": "Все товары", "Narx so‘rov asosida": "Цена по запросу", "Tafsilotlar so‘rov asosida": "Подробности по запросу", "Aniqlashtiriladi": "Уточняется", "So‘rov orqali aniqlashtiriladi": "Уточняется по запросу", "Rasmdagidek": "Как на фото", "Batafsil ko‘rish": "Подробнее", "Batafsil": "Подробнее", "Rubashka": "Рубашка", "Shim": "Брюки", "Futbolka": "Футболка", "Xudi": "Худи", "Oq": "Белый", "Qora": "Чёрный", "Bej": "Бежевый", "Ko‘k": "Синий", "Yashil": "Зелёный", "Qizil": "Красный", "Bordo": "Бордовый", "An’anaviy": "Традиционный", "Minimal": "Минимализм", "Geometrik": "Геометрический", "Gul naqsh": "Цветочный узор", "Ko‘krak": "Грудь", "Yeng": "Рукав", "Yoqa": "Воротник", "Etak": "Подол", "Orqa": "Спина", "Bosib kattalashtiring": "Нажмите для увеличения", "O‘lcham jadvali": "Таблица размеров", "O‘LCHAM JADVALI": "ТАБЛИЦА РАЗМЕРОВ", "Mato": "Ткань", "Tikuv turi": "Тип вышивки", "Kompyuterli kashta": "Машинная вышивка", "Naqsh o‘lchami": "Размер узора", "Parvarish": "Уход", "30°C, teskari tomondan dazmollash": "30°C, гладить с изнаночной стороны", "Yetkazib berish": "Доставка", "Buyurtma berish": "Заказать", "Telegram orqali yozish": "Написать в Telegram", "O‘xshash mahsulotlar": "Похожие товары", "Tanlanganlar": "Избранное", "SEVIMLILAR": "ИЗБРАННОЕ", "Tanlov brauzer xotirasida saqlanadi.": "Избранное сохраняется в этом браузере.", "Katalogga qaytish": "Вернуться в каталог", "Hozircha tanlangan mahsulot yo‘q.": "В избранном пока нет товаров.", "Ariza qoldiring": "Оставить заявку", "BUYURTMA": "ЗАКАЗ", "Mahsulot": "Товар", "Ism": "Имя", "Telefon": "Телефон", "Izoh": "Комментарий", "Soni": "Количество", "Aloqa usuli": "Способ связи", "Telefon qo‘ng‘irog‘i": "Телефонный звонок", "Arizani yuborish": "Отправить заявку", "Ariza yuborish": "Отправить заявку", "Arizangiz qabul qilindi. 1 soat ichida bog‘lanamiz.": "Заявка принята. Мы свяжемся с вами в течение часа.", "Asosiy o‘lchovlar": "Основные мерки", "Santimetrda. Yakuniy jadval buyurtmachi o‘lcham standartiga moslab tekshiriladi.": "В сантиметрах. Итоговая таблица уточняется по стандартам размеров заказчика.", "Bel": "Талия", "Son": "Бёдра", "Kim uchun tanlaysiz?": "Для кого выбираете?", "Avval naqshni tanlang.": "Сначала выберите узор.", "NAQSH KUTUBXONASI": "БИБЛИОТЕКА УЗОРОВ", "Naqsh kutubxonasi": "Библиотека узоров", "Naqshin naqsh kutubxonasi": "Библиотека узоров Naqshin", "Barchasini ko‘rish →": "Смотреть все →", "Yopish ↑": "Свернуть ↑", "Kiyimda ko‘rish →": "Посмотреть на одежде →", "Ornamentni tanlang. Keyingi oynada kiyim turini belgilang va naqshning kiyimdagi 4 xil AI mockup variantini yarating.": "Выберите орнамент. В следующем окне выберите тип одежды и создайте 4 варианта визуализации узора с помощью ИИ.", "Naqshin bilan sizga qulay yo‘lni tanlang.": "Выберите удобный формат работы с Naqshin.", "XIZMATLAR VA DO‘KON": "УСЛУГИ И МАГАЗИН", "Tayyor kiyimga naqsh tikish, korporativ buyurtma yoki do‘konda kolleksiyani jonli ko‘rish.": "Вышивка на вашей одежде, корпоративный заказ или знакомство с коллекцией в магазине.", "Kiyimingizni olib keling — naqshini biz tikamiz.": "Принесите свою одежду — мы вышьем узор.", "Naqsh, rang va joylashuvni birga tanlaymiz. Professional uskunada sifatli tikuv.": "Вместе выберем узор, цвет и расположение. Качественная вышивка на профессиональном оборудовании.", "Xizmatni ko‘rish": "Посмотреть услугу", "Forma, logotip tikuvi va korporativ sovg‘alar.": "Форма, вышивка логотипов и корпоративные подарки.", "Restoran, mehmonxona, bank, turizm, do‘kon va maktablar uchun kichik va katta tirajlar.": "Малые и крупные партии для ресторанов, отелей, банков, туристических компаний, магазинов и школ.", "Korporativ buyurtma": "Корпоративный заказ", "Kiyimlarni jonli ko‘ring.": "Посмотрите одежду вживую.", "Darxon, Oqqorg‘on 29. Sizni 10:00–20:00 oralig‘ida kutamiz.": "Дархан, Аккурган, 29. Ждём вас с 10:00 до 20:00.", "Kontaktlar": "Контакты", "DO‘KON": "МАГАЗИН", "XIZMAT": "УСЛУГА", "O‘Z KIYIMINGIZGA TIKUV": "ВЫШИВКА НА ВАШЕЙ ОДЕЖДЕ", "O‘z kiyimingizga tikuv": "Вышивка на вашей одежде", "Mijoz o‘z kiyimini olib keladi, naqsh tanlaydi, narx va muddat tasdiqlanadi va tayyor kiyimni olib ketadi.": "Вы приносите одежду и выбираете узор. Мы согласовываем цену и сроки, затем вы забираете готовую вещь.", "Kiyimni olib kelasiz": "Приносите одежду", "Mato va kiyim holatini tekshiramiz.": "Проверяем ткань и состояние одежды.", "Naqsh tanlaysiz": "Выбираете узор", "Kutubxonadan yoki individual dizayn.": "Из библиотеки или по индивидуальному дизайну.", "Narx va muddat": "Цена и сроки", "Naqsh o‘lchami va murakkabligiga qarab.": "Зависят от размера и сложности узора.", "1-YO‘L": "ВАРИАНТ 1", "2-YO‘L": "ВАРИАНТ 2", "Naqshin kutubxonasidan naqsh tanlash": "Выбрать узор из библиотеки Naqshin", "Tayyor naqshlardan birini tanlaysiz, rang va joylashuvni moslashtiramiz.": "Вы выбираете готовый узор, а мы подбираем цвет и расположение.", "Naqshlarni ko‘rish": "Посмотреть узоры", "O‘z dizayningizni yuklash": "Загрузить свой дизайн", "O‘z dizayningizni yuklang": "Загрузите свой дизайн", "Siz yuborgan rasm, logo yoki grafikani kashta uchun tayyorlab, o‘z kiyimingizga tikamiz.": "Подготовим ваше изображение, логотип или графику для вышивки на вашей одежде.", "Dizaynni yuklash": "Загрузить дизайн", "Taxminiy narx oralig‘i": "Ориентировочные цены", "Naqsh": "Узор", "Kichik": "Маленький", "O‘rta": "Средний", "Katta": "Большой", "Qabul qilinadigan matolar": "Подходящие ткани", "Paxta": "Хлопок", "Jinsi": "Джинсовая ткань", "Zig‘ir": "Лён", "Gabardin va zich kostyum matolari": "Габардин и плотные костюмные ткани", "Qabul qilinmaydigan holatlar": "Что не подходит", "Juda yupqa trikotaj": "Очень тонкий трикотаж", "Teri": "Кожа", "Eski yoki yirtiq kiyim": "Старая или порванная одежда", "Ko‘krak · yeng · etak · orqa": "Грудь · рукав · подол · спина", "OLDIN / KEYIN": "ДО / ПОСЛЕ", "Ish namunalari": "Примеры работ", "Maslahat uchun ariza": "Заявка на консультацию", "Maslahat kerak": "Нужна консультация", "Kiyim fotosi": "Фото одежды", "Kiyim fotosi (ixtiyoriy)": "Фото одежды (необязательно)", "Savol-javob": "Вопросы и ответы", "KORPORATIV BUYURTMA": "КОРПОРАТИВНЫЙ ЗАКАЗ", "Brendingizni matoda aniq ifodalang.": "Воплотите свой бренд в вышивке.", "Restoran, mehmonxona, turizm, bank, do‘kon va maktablar uchun forma, logotip tikuvi va korporativ sovg‘alar.": "Форма, вышивка логотипов и корпоративные подарки для ресторанов, отелей, туристических компаний, банков, магазинов и школ.", "Logotip tikuvi": "Вышивка логотипа", "Logotip digitizing qilinadi va matoga mos tikuv parametrlari tanlanadi.": "Логотип переводится в программу вышивки, параметры подбираются под ткань.", "Milliy uslubdagi forma": "Форма в национальном стиле", "Korporativ ranglarga mos milliy aksent.": "Национальные мотивы в фирменных цветах.", "Korporativ sovg‘a": "Корпоративный подарок", "Kiyim va aksessuarlarga individual kashta.": "Индивидуальная вышивка на одежде и аксессуарах.", "Tiraj": "Тираж", "Narx tamoyili": "Расчёт цены", "Taxminiy muddat": "Ориентировочный срок", "Individual hisob": "Индивидуальный расчёт", "Individual": "Индивидуально", "Portfolio": "Портфолио", "Korporativ ariza": "Корпоративная заявка", "Kompaniya nomi": "Название компании", "Aloqa shaxsi": "Контактное лицо", "Logotip fayli": "Файл логотипа", "BIZ HAQIMIZDA": "О НАС", "Biz haqimizda": "О нас", "Milliy naqshga hurmat. Zamonaviy texnologiyada aniqlik.": "Уважение к национальным узорам. Точность современных технологий.", "NAQSHIN — Toshkent shahrida, Darxon, Oqqorg‘on 29 manzilida joylashgan kompyuterli tikuv ustaxonasi va do‘kon.": "NAQSHIN — мастерская машинной вышивки и магазин в Ташкенте по адресу: Дархан, Аккурган, 29.", "kishilik jamoa": "человек в команде", "ignali FEIYA uskuna": "игл в машине FEIYA", "kiyim / kun o‘rtacha": "изделия в день в среднем", "ip ranglari": "цветов ниток", "Biz nima qilamiz": "Что мы делаем", "Tayyor kiyimlarga o‘zbek milliy naqshlari tikamiz: suzani gullari, anor, islimiy va boshqa motivlar. Dizayn Adobe Illustrator va Photoshop’da ishlanadi, so‘ng digitizing qilinib tikuvga uzatiladi. Mijoz o‘z kiyimini olib kelishi ham mumkin.": "Вышиваем узбекские национальные узоры на готовой одежде: цветы сюзане, гранат, ислими и другие мотивы. Дизайн создаётся в Adobe Illustrator и Photoshop, затем переводится в программу вышивки. Можно принести свою одежду.", "Qadriyatlar": "Наши ценности", "Aniq tikuv sifati": "Точность и качество вышивки", "Milliy naqshga hurmat": "Уважение к национальным узорам", "Har bir buyurtmaga shaxsiy yondashuv": "Индивидуальный подход к каждому заказу", "Jamoa": "Команда", "Ish boshqaruvchi": "Руководитель мастерской", "Ism va foto buyurtmachi tomonidan beriladi.": "Имя и фото предоставит заказчик.", "3 nafar tikuvchi": "3 мастера вышивки", "2 nafar dizayner": "2 дизайнера", "Ismlar va fotolar [to‘ldirilsin].": "Имена и фотографии [заполнить].", "Jarayon": "Процесс", "USTAXONA / JARAYON": "МАСТЕРСКАЯ / ПРОЦЕСС", "Nega yaxshi kashta vaqt va aniqlik talab qiladi?": "Почему качественная вышивка требует времени и точности?", "Har bir bosqich ketma-ket bajariladi: dizayn, digitizing, sinov tikuv, asosiy tikuv, sifat nazorati va topshirish.": "Этапы выполняются последовательно: дизайн, оцифровка, пробная вышивка, основная вышивка, контроль качества и выдача.", "Jarayonni jonli ko‘rish uchun do‘konga tashrif buyuring": "Приходите в магазин, чтобы увидеть процесс вживую", "KONTAKT": "КОНТАКТЫ", "Kontakt": "Контакты", "Do‘kon va ustaxona.": "Магазин и мастерская.", "Darxon, Oqqorg‘on 29. Ish vaqti: 10:00–20:00.": "Дархан, Аккурган, 29. Часы работы: 10:00–20:00.", "Darxon (Oqqorg‘on 29)": "Дархан (Аккурган, 29)", "Darxon, Oqqorg‘on 29": "Дархан, Аккурган, 29", "Kontakt ma’lumotlari": "Контактная информация", "Manzil": "Адрес", "Ish vaqti": "Часы работы", "Katta xaritada ochish ↗": "Открыть большую карту ↗", "Bog‘lanish formasi": "Форма обратной связи", "Xabar": "Сообщение", "Yuborish": "Отправить", "Xabaringiz qabul qilindi.": "Ваше сообщение принято.", "Telegramda yozish": "Написать в Telegram", "Ko‘p beriladigan savollar.": "Часто задаваемые вопросы.", "YETKAZIB BERISH VA TO‘LOV": "ДОСТАВКА И ОПЛАТА", "Yetkazib berish va to‘lov": "Доставка и оплата", "Buyurtma shartlari.": "Условия заказа.", "Aniq yetkazib berish narxi, hududlar va to‘lov usullari buyurtmachi tomonidan to‘ldiriladi.": "Стоимость и зоны доставки, а также способы оплаты будут уточнены заказчиком.", "Toshkent bo‘ylab": "По Ташкенту", "O‘zbekiston bo‘ylab": "По Узбекистану", "To‘lov": "Оплата", "Birinchi bosqichda ariza orqali. Payme/Click — 2-bosqich.": "На первом этапе — через заявку. Payme/Click — на втором этапе.", "[muddat va narx to‘ldirilsin]": "[уточняются срок и стоимость]", "[yetkazib berish xizmati va tarif to‘ldirilsin]": "[уточняются служба доставки и тариф]", "[to‘ldirilsin]": "[уточняется]", "Maxsus naqsh va dizaynlar bilan bezatilgan kiyimlar, professional kompyuterli tikuv.": "Одежда с уникальными узорами и дизайном, профессиональная машинная вышивка.", "Xizmatlar": "Услуги", "Kompaniya": "Компания", "© 2026 NAQSHIN. Barcha huquqlar himoyalangan.": "© 2026 NAQSHIN. Все права защищены.", "Maxfiylik siyosati · Ommaviy oferta": "Политика конфиденциальности · Публичная оферта", "INDIVIDUAL KASHTA": "ИНДИВИДУАЛЬНАЯ ВЫШИВКА", "Dizayningiz va kiyim haqidagi ma’lumotlarni qoldiring. Fayl brauzerda preview qilinadi; ishlab chiqarish uchun backend integratsiyasi ulanganda operatorga yuboriladi.": "Оставьте дизайн и информацию об одежде. Файл доступен для предпросмотра в браузере; после подключения сервера он будет отправляться оператору.", "Dizayn fayli": "Файл дизайна", "Kashta uchun imkon qadar aniq, yuqori sifatli fayl yuboring.": "Пришлите чёткий файл высокого качества для подготовки вышивки.", "Fayl tanlash": "Выбрать файл", "Fayl tanlanmagan": "Файл не выбран", "Preview": "Предпросмотр", "Ko‘ylak / rubashka": "Платье / рубашка", "Futbolka / polo": "Футболка / поло", "Xudi / svitshot": "Худи / свитшот", "Pidjak / jaket": "Пиджак / жакет", "Shim / yubka": "Брюки / юбка", "Aksessuar": "Аксессуар", "Bluzka": "Блузка", "Jilet": "Жилет", "Boshqa": "Другое", "Tanlang": "Выберите", "Taxminiy o‘lcham": "Примерный размер", "Aniq bilmayman": "Пока не знаю", "Ip ranglari": "Цвета ниток", "Kerakli muddat": "Желаемый срок", "Dizayn kashtaga mos kelishi tikuvdan oldin tekshiriladi. Zarur bo‘lsa dizayner kompozitsiya, rang yoki chiziq qalinligi bo‘yicha taklif beradi.": "Перед вышивкой проверяем, подходит ли дизайн. При необходимости дизайнер предложит изменения композиции, цвета или толщины линий.", "Individual buyurtma yuborish": "Отправить индивидуальный заказ", "Ariza tayyorlandi. Backend integratsiyasi ulanganda dizayn fayli operatorga avtomatik yuboriladi.": "Заявка подготовлена. После подключения сервера файл дизайна будет автоматически отправляться оператору.", "Kolleksiyani ko‘rish uchun ekranga teging": "Коснитесь экрана, чтобы посмотреть коллекцию", "NAQSHIN — naqsh bilan yangicha uslub": "NAQSHIN — новый стиль с национальными узорами", "Naqshin haqida": "О Naqshin", "Naqshning ma’nosini bilib tanlang.": "Выбирайте узор, зная его смысл.", "Naqshin’ning asosiy farqi — naqsh faqat bezak emas. Har bir motivning kelib chiqishi, ma’nosi va tavsiya etilgan joylashuvi bor.": "В Naqshin узор — больше, чем украшение. У каждого мотива есть история, смысл и рекомендуемое расположение.", "NAQSH LAB": "ЛАБОРАТОРИЯ УЗОРОВ", "Naqshni kiyimda ko‘rish": "Посмотреть узор на одежде", "TANLANGAN NAQSH": "ВЫБРАННЫЙ УЗОР", "01 · KIYIM TURINI TANLANG": "01 · ВЫБЕРИТЕ ТИП ОДЕЖДЫ", "Qaysi kiyimda ko‘rmoqchisiz?": "На какой одежде показать узор?", "Kiyim turi tanlanmagan": "Тип одежды не выбран", "4 variant yaratish": "Создать 4 варианта", "02 · AI MOCKUP": "02 · ИИ-ВИЗУАЛИЗАЦИЯ", "4 xil joylashuv varianti": "4 варианта расположения", "Variantlar yaratilmoqda...": "Создаём варианты...", "4 ta variant yaratilmoqda...": "Создаём 4 варианта...", "Kiyimni almashtirish": "Выбрать другую одежду", "Qayta yaratish": "Создать заново", "Real generatsiya xavfsiz backend orqali OpenAI image generation API bilan ulanadi.": "Генерация подключается через защищённый сервер к API создания изображений OpenAI.", "Frontend tayyor. AI backend hali ulanmagan.": "Интерфейс готов. Сервер генерации ИИ пока не подключён.", "Keyingi bosqich:": "Следующий этап:", "AI natijasi tayyor. Keyinchalik har bir variantga “Buyurtma berish” funksiyasini ulash mumkin.": "Результат ИИ готов. В дальнейшем к каждому варианту можно подключить заказ.", "Generatsiya amalga oshmadi.": "Не удалось создать изображения.", "Qayta urinib ko‘ring.": "Попробуйте ещё раз.", "Yopish": "Закрыть", "Qidirish": "Поиск", "Dizayn": "Дизайн", "Dizayner naqsh eskizini Adobe Illustrator’da ishlaydi yoki mavjud naqsh tanlanadi.": "Дизайнер создаёт эскиз в Adobe Illustrator или выбирает готовый узор.", "Digitizing": "Оцифровка", "Naqsh tikuv mashinasi o‘qiydigan dasturga aylantiriladi; ignaning har bir harakati belgilanadi.": "Узор переводится в программу для вышивальной машины с заданием каждого движения иглы.", "Sinov tikuv": "Пробная вышивка", "Naqsh avval sinov matoga tikiladi va tekshiriladi.": "Сначала узор вышивается на пробной ткани и проверяется.", "Asosiy tikuv": "Основная вышивка", "FEIYA 12 ignali mashinada kiyimga tikiladi.": "Вышивка выполняется на одежде на 12-игольной машине FEIYA.", "Sifat nazorati va tozalash": "Контроль качества и обработка", "Ipni tozalash, dazmollash va yakuniy ko‘rik.": "Удаление лишних ниток, глажка и итоговая проверка.", "Topshirish": "Выдача", "Do‘kondan olish yoki yetkazib berish.": "Самовывоз из магазина или доставка.", "Qancha vaqtda tayyor bo‘ladi?": "Сколько времени занимает изготовление?", "Muddat naqsh murakkabligi va ustaxona yuklamasiga bog‘liq. Ustaxona quvvati o‘rtacha kuniga 3 ta kiyim.": "Срок зависит от сложности узора и загрузки мастерской. В среднем мы изготавливаем 3 изделия в день.", "O‘z kiyimimni olib kelsam bo‘ladimi?": "Можно принести свою одежду?", "Ha. Mato va kiyim holati tekshirilgach, mos naqsh va joylashuv tavsiya qilinadi.": "Да. После проверки ткани и состояния одежды мы предложим подходящий узор и расположение.", "Naqsh rangini o‘zgartirish mumkinmi?": "Можно изменить цвет узора?", "Ha, 50 dan ortiq ip rangidan mos kombinatsiya tanlash mumkin.": "Да, можно подобрать сочетание из более чем 50 цветов ниток.", "Qaysi matoga tikib bo‘lmaydi?": "Какие ткани не подходят для вышивки?", "Juda yupqa trikotaj, teri, eski yoki yirtiq kiyimlar tavsiya etilmaydi.": "Не рекомендуем очень тонкий трикотаж, кожу, старую или порванную одежду.", "Korporativ buyurtma olasizmi?": "Вы принимаете корпоративные заказы?", "Ha. Logotip tikuvi, forma va korporativ sovg‘alar uchun alohida ariza mavjud.": "Да. Для вышивки логотипов, формы и корпоративных подарков есть отдельная заявка.", "O‘lcham bo‘lmasa nima qilaman?": "Что делать, если нет моего размера?", "Mahsulot “buyurtma asosida” bo‘lsa, sotuvchi bilan muddat va imkoniyat aniqlashtiriladi.": "Если изделие доступно под заказ, уточните у продавца сроки и возможность изготовления.", "Yetkazib berish bormi?": "Есть ли доставка?", "Yetkazib berish shartlari va narxlari buyurtmachi tomonidan yakuniy bosqichda to‘ldiriladi.": "Условия и стоимость доставки будут уточнены заказчиком на заключительном этапе.", "Naqsh ma’nosini qayerdan bilaman?": "Где узнать значение узора?", "Naqsh kutubxonasida har bir naqshning kelib chiqishi, ma’nosi va texnik ma’lumoti bor.": "В библиотеке узоров есть история, значение и техническая информация о каждом узоре.", "Sevimlilar saqlanadimi?": "Сохраняется ли избранное?", "Ha. Tanlangan mahsulotlar ushbu brauzer xotirasida saqlanadi.": "Да. Выбранные товары сохраняются в этом браузере.", "Onlayn to‘lov bormi?": "Есть ли онлайн-оплата?", "Birinchi versiyada yo‘q. Buyurtma ariza orqali qabul qilinadi; Payme va Click 2-bosqich uchun rejalashtirilgan.": "В первой версии нет. Заказ принимается через заявку; Payme и Click запланированы на второй этап.", "Anor": "Гранат", "Buxoro suzanisi": "Бухарское сюзане", "Islimiy": "Ислими", "Nurota guli": "Цветок Нураты", "Samarqand yulduzi": "Самаркандская звезда", "Shahrisabz bargi": "Лист Шахрисабза", "Farg‘ona islimi": "Ферганский ислими", "Bodom": "Миндаль", "O‘zbekiston": "Узбекистан", "Buxoro": "Бухара", "Samarqand": "Самарканд", "Nurota": "Нурата", "Shahrisabz": "Шахрисабз", "Farg‘ona": "Фергана", "Surxondaryo": "Сурхандарья", "Qashdaryo": "Кашкадарья", "Kashtachilik": "Вышивка", "Ornament": "Орнамент", "Ornament nomi yo‘qolgan": "Безымянный орнамент", "Gulli to‘pbarggul": "Цветочная розетка", "Mehrob-gul": "Мехроб-гуль", "Mehrobgul": "Мехробгуль", "Sakkizqirrali to‘pbarggul": "Восьмигранная розетка", "To‘pbarggul": "Розетка", "Oy": "Луна", "Gul": "Цветок", "Chor qalampir": "Четыре перца", "Gulsafsar": "Ирис", "Qalampirgul": "Цветок перца", "Anor mo‘l-ko‘llik, baraka va avlod davomiyligi ramzi sifatida talqin qilinadi.": "Гранат символизирует изобилие, благополучие и продолжение рода.", "Suzani an’anasidan ilhomlangan yirik gul motivlari tantanavorlik va iliqlik kayfiyatini beradi.": "Крупные цветочные мотивы в традициях сюзане создают ощущение торжественности и тепла.", "Uzviy davom etuvchi barg va novda ritmi o‘sish va uyg‘unlik g‘oyasini ifodalaydi.": "Непрерывный ритм листьев и ветвей выражает рост и гармонию.", "Nozik gul kompozitsiyasi yengil va nafis aksent sifatida ishlatiladi.": "Нежная цветочная композиция служит лёгким и изящным акцентом.", "Geometrik ritm me’moriy bezaklardan ilhomlangan zamonaviy talqindir.": "Геометрический ритм — современная интерпретация архитектурных орнаментов.", "Barg motivining soddalashtirilgan shakli minimal garderobga moslashtirilgan.": "Упрощённый мотив листа адаптирован для минималистичного гардероба.", "Yumshoq egri chiziqlar va mayda barglar uyg‘unligi klassik naqsh tiliga murojaat qiladi.": "Сочетание плавных линий и мелких листьев отсылает к классическим узорам.", "Bodom shakli ixcham aksent sifatida kundalik kiyimlarga moslashtiriladi.": "Форма миндаля используется как компактный акцент на повседневной одежде.", "Kelib chiqishi": "Происхождение", "Ranglar soni": "Количество цветов", "Taxminiy stitch": "Примерное число стежков", "Joylashuv": "Расположение", "Shu naqshni o‘z kiyimingizga tiktiring": "Закажите этот узор на своей одежде", "Shu naqshdagi mahsulotlar": "Товары с этим узором", "← Naqshlar ro‘yxati": "← К списку узоров", "Kolleksiyani ko‘rish": "Посмотреть коллекцию", "TEZ KUNDA / STRUKTURA TAYYOR": "СКОРО / РАЗДЕЛ В ПОДГОТОВКЕ", "Oldin": "До", "Keyin": "После", "PDF fayl tanlandi": "Выбран PDF-файл", "tanlangan ornament rasmi va bazaviy kiyim rasmi backend orqali OpenAI image generation modeliga yuboriladi va 4 ta real mockup qaytariladi.": "Изображение орнамента и базовой одежды будут отправлены через сервер в модель генерации изображений OpenAI для создания 4 визуализаций.", "Naqshin bosh sahifa": "Главная Naqshin", "Kiyim yoki naqsh qidiring…": "Поиск одежды или узора…", "Sevimlilar": "Избранное", "Hozircha sevimlilar yo‘q.": "В избранном пока нет товаров.", "NAQSHIN — Darxon, Oqqorg‘on 29 xaritasi": "NAQSHIN — карта: Дархан, Аккурган, 29", "Masalan: bordo, oq, ko‘k": "Например: бордовый, белый, синий", "Masalan: 5–7 kun ichida": "Например: в течение 5–7 дней", "Dizayn, o‘lcham yoki kiyim bo‘yicha qo‘shimcha ma’lumot": "Дополнительная информация о дизайне, размере или одежде", "min": "мин.", "max": "макс.", "Naqshin kiyimlari bilan tayyor obraz. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring.": "Готовый образ с одеждой Naqshin. Оставьте заявку, чтобы уточнить цену, доступные размеры и условия заказа."};
+const normalize=s=>s.replace(/\s+/g,' ').trim();
+function translate(s){
+ const t=normalize(s);if(dictionary[t])return dictionary[t];if(/^[\d\s.,]+ so‘m$/.test(t))return t.replace(/so‘m$/,'сум');
+ if(/ \*$/.test(t))return translate(t.slice(0,-2))+' *';
+ if(/:$/.test(t))return translate(t.slice(0,-1))+':';
+ let m;
+ if(m=t.match(/^(\d+) ta mahsulot$/))return m[1]+' товаров';
+ if(m=t.match(/^(\d+) mahsulot$/))return m[1]+' товаров';
+ if(m=t.match(/^(\d+) ta naqsh ko‘rsatilmoqda$/))return 'Показано узоров: '+m[1];
+ if(m=t.match(/^(Rubashka|Shim|Futbolka|Xudi|Look) (\d+)$/))return (dictionary[m[1]]||m[1])+' '+m[2];
+ if(m=t.match(/^Naqshli (.+)\. Narxi, mavjud o‘lchamlari va buyurtma tafsilotlarini aniqlashtirish uchun ariza qoldiring\.$/))return 'Одежда с вышивкой. Оставьте заявку, чтобы уточнить цену, доступные размеры и условия заказа.';
+ if(m=t.match(/^(\d+\+?) dona$/))return m[1]+' шт.';
+ if(m=t.match(/^([\d–+ ]+) sm$/))return m[1]+' см';
+ if(m=t.match(/^([\d–]+) rang$/))return m[1]+' цветов';
+ if(m=t.match(/^([\d–]+) yosh$/))return m[1]+' лет';
+ if(m=t.match(/^Ish vaqti: (.+)$/))return 'Часы работы: '+m[1];
+ if(m=t.match(/^Telefon: (.+)$/))return 'Телефон: '+m[1];
+ if(t.includes(' · '))return t.split(' · ').map(translate).join(' · ');
+ if(t.includes(' / '))return t.split(' / ').map(translate).join(' / ');
+ if(t.includes(', ')&&t.length<60)return t.split(', ').map(translate).join(', ');
+ if(t.endsWith(' ×'))return translate(t.slice(0,-2))+' ×';
+ if(t.startsWith('Bu naqsh haqida: '))return 'Об этом узоре: '+translate(t.slice(17).replace(' →',''))+' →';
+ return s;
+}
+window.naqshinTranslate=translate;
+let lang='uz';try{lang=localStorage.getItem('naqshin-language')==='ru'?'ru':'uz'}catch(e){}
+const originals=new WeakMap(),attrs=new WeakMap();
+const skip='script,style,textarea,[data-no-translate]';
+function apply(){
+ observer.disconnect();
+ // Keep select values stable when their visible labels change.
+ document.querySelectorAll('option:not([value])').forEach(o=>o.setAttribute('value',o.textContent));
+ const walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+ let node;while(node=walker.nextNode()){
+  if(!node.parentElement||node.parentElement.closest(skip)||!node.nodeValue.trim())continue;
+  let saved=originals.get(node);
+  if(!saved||node.nodeValue!==saved.last)saved={source:node.nodeValue};
+  const next=lang==='ru'?translate(saved.source):saved.source;
+  if(node.nodeValue!==next)node.nodeValue=next;
+  saved.last=next;originals.set(node,saved);
+ }
+ document.querySelectorAll('[placeholder],[aria-label],[title],[alt]').forEach(el=>{
+  if(el.closest(skip))return;
+  let map=attrs.get(el)||{};
+  ['placeholder','aria-label','title','alt'].forEach(key=>{
+   if(!el.hasAttribute(key))return;
+   const current=el.getAttribute(key);let saved=map[key];
+   if(!saved||current!==saved.last)saved={source:current};
+   const next=lang==='ru'?translate(saved.source):saved.source;
+   if(current!==next)el.setAttribute(key,next);
+   saved.last=next;map[key]=saved;
+  });attrs.set(el,map);
+ });
+ document.documentElement.lang=lang;
+ document.title=lang==='ru'?'NAQSHIN — новый стиль с национальными узорами':'NAQSHIN — naqsh bilan yangicha uslub';
+ document.querySelectorAll('[data-lang]').forEach(b=>{b.classList.toggle('active',b.dataset.lang===lang);b.setAttribute('aria-pressed',String(b.dataset.lang===lang))});
+ observer.observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['placeholder','aria-label','title','alt']});
+}
+const observer=new MutationObserver(apply);
+document.querySelectorAll('[data-lang]').forEach(b=>b.addEventListener('click',()=>{lang=b.dataset.lang;try{localStorage.setItem('naqshin-language',lang)}catch(e){}apply()}));
+apply();
+})();
+</script></body></html>
