@@ -1044,7 +1044,7 @@ const state={view:'home',dept:'Barchasi',expandedDept:null,types:new Set(),sizes
 const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];const fmt=n=>n==null?'Narx so‘rov asosida':new Intl.NumberFormat('uz-UZ').format(n)+' so‘m';
 function productCard(p){return `<article class="product-card" data-id="${p.id}"><div class="product-media"><img loading="lazy" src="${p.image}" alt="${p.name} — ${p.pattern}"><span class="status-pill">${p.status===statuses[0]?`<span class="sp-long">${p.status}</span><span class="sp-short">So‘rov asosida</span>`:p.status}</span><button class="heart-btn ${state.favorites.has(p.id)?'active':''}" data-fav="${p.id}">${state.favorites.has(p.id)?'♥':'♡'}</button><button class="quick-btn" data-open="${p.id}">Batafsil ko‘rish</button></div><div class="product-info"><div class="product-title-row"><div><h3>${p.name}</h3><span class="product-kind">${p.dept} · ${p.type}</span></div><div class="swatches">${p.colors.map(c=>`<i style="background:${c}"></i>`).join('')}</div></div><p class="product-price">${fmt(p.price)}</p></div></article>`}
 function setupHome(){
-  const catImgs=[IMAGES[21],IMAGES[23],IMAGES[25],IMAGES[17]];
+  const catImgs=[IMAGES[21],'img/3cd2796653c5.webp',IMAGES[25],IMAGES[17]];
   const homeCategories=$('#homeCategories');
   if(homeCategories){
     homeCategories.innerHTML=['Ayollar','Erkaklar'].map((d,i)=>`<button class="cat-card" data-home-dept="${d}" style="border:0;padding:0;text-align:left"><img loading="lazy" decoding="async" src="${catImgs[i]}" alt="${d}"><div class="cat-card-copy"><h3>${d}</h3><p>${d.includes('bolalar')?'2–14 yosh':'Kolleksiyani ko‘rish'}</p>${d.includes('bolalar')?'<span class="soon">TEZ KUNDA / STRUKTURA TAYYOR</span>':''}</div></button>`).join('');
